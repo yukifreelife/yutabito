@@ -1,4 +1,4 @@
-function renderRecommendedSlider(data) {
+export function renderRecommendedSlider(data) {
   const slider = document.getElementById("recommended-slider");
 
   // ランダムに3〜5件抽出

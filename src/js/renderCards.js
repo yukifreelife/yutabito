@@ -1,5 +1,5 @@
 // 温泉カードをHTMLに描画する
-function renderOnsenCards(data) {
+export function renderOnsenCards(data) {
   const container = document.getElementById("onsen-list");
   container.innerHTML = ""; // 初期化
 
