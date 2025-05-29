@@ -1,0 +1,67 @@
+.onsen-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.onsen-card {
+  width: 250px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  padding: 0.5rem;
+  background-color: #fff;
+}
+
+.onsen-card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  transition: transform 0.2s ease;
+}
+
+.card-link:hover {
+  transform: scale(1.03);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.slider-section {
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+
+.slider-container {
+  display: flex;
+  overflow-x: auto;
+  gap: 1rem;
+  padding-bottom: 1rem;
+  scroll-snap-type: x mandatory;
+}
+
+.slider-card {
+  flex: 0 0 auto;
+  width: 180px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  text-align: center;
+  scroll-snap-align: start;
+  text-decoration: none;
+  color: inherit;
+}
+
+.slider-card img {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+  height: 120px;
+  object-fit: cover;
+}
+

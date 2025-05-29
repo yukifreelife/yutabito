@@ -1,0 +1,72 @@
+.onsen-detail {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.onsen-detail img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.description-box {
+  background-color: #f9f9f9;
+  border-left: 6px solid #00a2a2;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.btn-group {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #00a2a2;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background-color: #007777;
+}
+
+.btn.secondary {
+  background-color: #666;
+}
+
+.btn.secondary:hover {
+  background-color: #444;
+}
+
+/* 🧪 追加：レスポンシブ対応 */
+
+@media (max-width: 600px) {
+  .onsen-detail {
+    margin: 1rem;
+    padding: 1rem;
+  }
+
+  .btn-group {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+}

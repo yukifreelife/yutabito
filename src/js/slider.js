@@ -1,0 +1,18 @@
+function renderRecommendedSlider(data) {
+  const slider = document.getElementById("recommended-slider");
+
+  // ランダムに3〜5件抽出
+  const shuffled = [...data].sort(() => 0.5 - Math.random());
+  const selected = shuffled.slice(0, 5);
+
+  selected.forEach(onsen => {
+    const card = document.createElement("a");
+    card.className = "slider-card";
+    card.href = `onsen.html?id=${onsen.id}`;
+    card.innerHTML = `
+      <img src="${onsen.imageUrl}" alt="${onsen.name}">
+      <h4>${onsen.name}</h4>
+    `;
+    slider.appendChild(card);
+  });
+}
