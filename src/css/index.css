@@ -3,22 +3,54 @@
   flex-wrap: wrap;
   gap: 1rem;
   padding: 1rem;
+  justify-content: center;
 }
 
 .onsen-card {
   width: 250px;
   border: 1px solid #ccc;
-  border-radius: 8px;
+  border-radius:12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   overflow: hidden;
-  padding: 0.5rem;
+  padding: 0;
+  margin: 12px;
+  transition: transform 0.2s ease;
   background-color: #fff;
+  flex-shrink: 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.onsen-card:hover {
+  transform: translateY(-4px);
 }
 
 .onsen-card img {
   width: 100%;
-  height: auto;
+  height: 160px;
   object-fit: cover;
   border-radius: 4px;
+  border-bottom: 1px solid #ddd;
+}
+
+.onsen-card h3 {
+  font-size: 1.1rem;
+  margin: 0.5em 0 0.3em;
+  padding: 0 0.5em;
+}
+
+.onsen-card p {
+  font-size: 0.9rem;
+  padding: 0 0.5em;
+  margin: 0.3em 0;
+}
+
+
+.favorite-btn {
+  margin-top: 0.5rem;
+  align-self: center;
 }
 
 .card-link {
@@ -49,6 +81,10 @@
 .slider-card {
   flex: 0 0 auto;
   width: 180px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
   background: #fff;
   border-radius: 10px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
@@ -56,6 +92,7 @@
   scroll-snap-align: start;
   text-decoration: none;
   color: inherit;
+  overflow: hidden;
 }
 
 .slider-card img {
@@ -65,3 +102,82 @@
   object-fit: cover;
 }
 
+.filter-section {
+  text-align: center;
+  margin: 1rem 0;
+}
+
+#springFilter {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.search-section {
+  text-align: center;
+  margin: 1rem 0;
+}
+
+#searchInput {
+  width: 90%;
+  max-width: 400px;
+  padding: 0.6rem 1rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.favorite-btn {
+  display: block;
+  width: 90%;
+  margin: 10px auto 15px;
+  padding: 8px 12px;
+  font-size: 1rem;
+  background-color: #fff;
+  border: 1px solid #f08080;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-align: center;
+}
+
+.favorite-btn:hover {
+  background-color: #ffecec;
+}
+
+.favorite-btn.active {
+  background-color: #f08080;
+  color: white;
+  border-color: #f08080;
+}
+
+
+@media (max-width: 600px) {
+  .onsen-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .onsen-card {
+    width: 90%;
+    max-width: 320px;
+  }
+
+  .slider-container {
+    flex-direction: column;
+    gap: 1rem;
+    overflow-x: visible;
+  }
+
+  .slider-card {
+    width: 90%;
+    max-width: 320px;
+    margin: 0 auto;
+  }
+
+  h1, h2 {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+}

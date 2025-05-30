@@ -3,9 +3,13 @@ export function renderOnsenCards(data) {
   const container = document.getElementById("onsen-list");
   container.innerHTML = ""; // 初期化
 
+  const favorites = JSON.parse(localStorage.getItem('favorites')) || [];
+
   data.forEach(onsen => {
     const card = document.createElement("div");
     card.className = "onsen-card";
+
+    const isFavorite = favorites.includes(onsen.id);
 
     card.innerHTML = `
      <a href="onsen.html?id=${onsen.id}" class="card-link">
@@ -14,7 +18,33 @@ export function renderOnsenCards(data) {
       <p>${onsen.region}・${onsen.springType}</p>
       <p>${onsen.description}</p>
      </a>
+      <button class="favorite-btn" data-id="${onsen.id}" type="button" >
+        ${isFavorite ? '❤️ お気に入り済み' : '🤍 お気に入り'}
+      </button>
     `;
+        // お気に入りボタンの処理
+    const favBtn = card.querySelector('.favorite-btn');
+    favBtn.addEventListener('click', () => {
+      toggleFavorite(onsen.id);
+      renderOnsenCards(data);
+    });
     container.appendChild(card);
   });
 }
+
+export function toggleFavorite(id) {
+  const favorites = JSON.parse(localStorage.getItem('favorites')) || [];
+
+  if (favorites.includes(id)) {
+    // すでにお気に入り → 削除
+    const updated = favorites.filter(fav => fav !== id);
+    localStorage.setItem('favorites', JSON.stringify(updated));
+  } else {
+    // お気に入りに追加
+    favorites.push(id);
+    localStorage.setItem('favorites', JSON.stringify(favorites));
+  }
+}
+
+
+

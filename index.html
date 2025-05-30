@@ -21,6 +21,40 @@
         </div>
       </section>
 
+      <section class="search-section">
+        <input
+            type="text"
+            id="searchInput"
+            
+            placeholder="温泉名で検索（例：草津、別府）"
+        />
+      </section>
+
+      <section class="filter-section">
+        <label for="springFilter">泉質で絞り込み：</label>
+        <select id="springFilter">
+            <option value="">すべて</option>
+            <option value="酸性泉">酸性泉</option>
+            <option value="硫黄泉">硫黄泉</option>
+            <option value="アルカリ性単純泉">アルカリ性単純泉</option>
+            <option value="多種泉質">多種泉質</option>
+            <option value="放射能泉">放射能泉</option>
+            <option value="金泉・銀泉">金泉・銀泉</option>
+            <option value="炭酸水素塩泉">炭酸水素塩泉</option>
+            <option value="単純泉">単純泉</option>
+            <option value="多様な泉質">多様な泉質</option>
+        </select>
+        <select id="regionFilter">
+            <option value="">すべての地域</option>
+            <option value="北海道">北海道</option>
+            <option value="群馬県">群馬県</option>
+            <!-- 他の都道府県も適宜追加 -->
+        </select>
+
+      </section>
+
+
+
       <section id="onsen-list" class="onsen-list">
         <!-- JSで温泉カード一覧が挿入される -->
       </section>
