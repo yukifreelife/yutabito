@@ -21,6 +21,9 @@
         </div>
       </section>
 
+      <button id="favoritesToggle">❤️ お気に入りのみ表示</button>
+
+
       <section class="search-section">
         <input
             type="text"
@@ -42,14 +45,29 @@
             <option value="金泉・銀泉">金泉・銀泉</option>
             <option value="炭酸水素塩泉">炭酸水素塩泉</option>
             <option value="単純泉">単純泉</option>
+            
             <option value="多様な泉質">多様な泉質</option>
         </select>
         <select id="regionFilter">
             <option value="">すべての地域</option>
             <option value="北海道">北海道</option>
             <option value="群馬県">群馬県</option>
+            <option value="大分県">大分県</option>
+            <option value="鹿児島県">鹿児島県</option>
+            <option value="静岡県">静岡県</option>
+         
             <!-- 他の都道府県も適宜追加 -->
         </select>
+        <label for="sortSelect">並び替え：</label>
+        <select id="sortSelect">
+            <option value="">並び替えなし</option>
+            <option value="name-asc">名前（昇順）</option>
+            <option value="name-desc">名前（降順）</option>
+            <option value="region-asc">地域（昇順）</option>
+            <option value="region-desc">地域（降順）</option>
+        </select>
+
+
 
       </section>
 

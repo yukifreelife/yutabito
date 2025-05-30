@@ -18,7 +18,7 @@ export function renderOnsenCards(data) {
       <p>${onsen.region}・${onsen.springType}</p>
       <p>${onsen.description}</p>
      </a>
-      <button class="favorite-btn" data-id="${onsen.id}" type="button" >
+      <button class="favorite-btn ${isFavorite ? 'active' : ''}" data-id="${onsen.id}" type="button" >
         ${isFavorite ? '❤️ お気に入り済み' : '🤍 お気に入り'}
       </button>
     `;
@@ -27,6 +27,7 @@ export function renderOnsenCards(data) {
     favBtn.addEventListener('click', () => {
       toggleFavorite(onsen.id);
       renderOnsenCards(data);
+      updateFavoriteButtons(); 
     });
     container.appendChild(card);
   });
@@ -44,6 +45,21 @@ export function toggleFavorite(id) {
     favorites.push(id);
     localStorage.setItem('favorites', JSON.stringify(favorites));
   }
+}
+
+export function updateFavoriteButtons() {
+  const favorites = JSON.parse(localStorage.getItem('favorites')) || [];
+
+  document.querySelectorAll('.favorite-btn').forEach(btn => {
+    const id = btn.getAttribute('data-id');
+    if (favorites.includes(id)) {
+      btn.classList.add('active');               // ← クラス追加
+      btn.textContent = '❤️ お気に入り済み';
+    } else {
+      btn.classList.remove('active');            // ← クラス削除
+      btn.textContent = '🤍 お気に入り';
+    }
+  });
 }
 
 
