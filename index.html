@@ -28,47 +28,58 @@
         <input
             type="text"
             id="searchInput"
-            
             placeholder="温泉名で検索（例：草津、別府）"
         />
       </section>
 
       <section class="filter-section">
-        <label for="springFilter">泉質で絞り込み：</label>
-        <select id="springFilter">
-            <option value="">すべて</option>
-            <option value="酸性泉">酸性泉</option>
-            <option value="硫黄泉">硫黄泉</option>
-            <option value="アルカリ性単純泉">アルカリ性単純泉</option>
-            <option value="多種泉質">多種泉質</option>
-            <option value="放射能泉">放射能泉</option>
-            <option value="金泉・銀泉">金泉・銀泉</option>
-            <option value="炭酸水素塩泉">炭酸水素塩泉</option>
-            <option value="単純泉">単純泉</option>
-            
-            <option value="多様な泉質">多様な泉質</option>
-        </select>
+        <label for="springFilter">絞り込み：</label>
+
+        <!-- 地域 -->
         <select id="regionFilter">
-            <option value="">すべての地域</option>
-            <option value="北海道">北海道</option>
-            <option value="群馬県">群馬県</option>
-            <option value="大分県">大分県</option>
-            <option value="鹿児島県">鹿児島県</option>
-            <option value="静岡県">静岡県</option>
-         
-            <!-- 他の都道府県も適宜追加 -->
+          <option value="">地域を選択</option>
+          <option value="東北">東北</option>
+          <option value="関東">関東</option>
+          <!-- 必要に応じて定義 -->
         </select>
-        <label for="sortSelect">並び替え：</label>
-        <select id="sortSelect">
-            <option value="">並び替えなし</option>
-            <option value="name-asc">名前（昇順）</option>
-            <option value="name-desc">名前（降順）</option>
-            <option value="region-asc">地域（昇順）</option>
-            <option value="region-desc">地域（降順）</option>
+         <!-- 都道府県 -->
+        <select id="prefectureFilter">
+          <option value="">都道府県を選択</option>
+          <option value="北海道">北海道</option>
+          <option value="青森県">青森県</option>
+          <!-- ...以下略（47都道府県分） -->
+        </select>
+        <!-- 泉質 -->
+        <select id="springTypeFilter">
+          <option value="">泉質を選択</option>
+          <option value="単純温泉">単純温泉</option>
+          <option value="塩化物泉">塩化物泉</option>
+          <option value="炭酸水素塩泉">炭酸水素塩泉</option>
+          <option value="硫酸塩泉">硫酸塩泉</option>
+          <option value="二酸化炭素泉">二酸化炭素泉</option>
+          <option value="含鉄泉">含鉄泉</option>
+          <option value="酸性泉">酸性泉</option>
+          <option value="含よう素泉">含よう素泉</option>
+          <option value="硫黄泉">硫黄泉</option>
+          <option value="放射能泉">放射能泉</option>
         </select>
 
+        <!-- 湧出量（例：リスト or 数値） -->
+        <input type="number" id="flowRateMin" placeholder="最小湧出量（L/分）" />
+        <input type="number" id="flowRateMax" placeholder="最大湧出量（L/分）" />
 
+        <!-- 源泉かけ流し -->
+        <label>
+          <input type="checkbox" id="gensenFilter" />
+          源泉かけ流しのみ表示
+        </label>
 
+        <!-- 並び替え（50音順など） -->
+        <select id="sortFilter">
+          <option value="">並び替え</option>
+          <option value="name-asc">名前順（昇順）</option>
+          <option value="name-desc">名前順（降順）</option>
+        </select>
       </section>
 
 

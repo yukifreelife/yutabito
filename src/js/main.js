@@ -17,9 +17,8 @@ fetch('/onsen.json')
 
     // 入力欄とフィルターの取得
     const searchInput = document.getElementById('searchInput');
-    const springFilter = document.getElementById('springFilter');
     const regionFilter = document.getElementById('regionFilter');
-    const sortSelect = document.getElementById('sortSelect');
+    const sortSelect = document.getElementById('sortFilter');
     sortSelect.addEventListener('change', () => {
     sort = sortSelect.value;
     applyFilters();
@@ -28,39 +27,46 @@ fetch('/onsen.json')
 
 
     // フィルター処理の共通関数
-    const applyFilters = () => {
-      const sort = sortSelect.value;
-      const keyword = searchInput.value.trim().toLowerCase();
-      const spring = springFilter.value;
-      const region = regionFilter.value;
-      const favorites = JSON.parse(localStorage.getItem('favorites')) || [];
+const applyFilters = () => {
+  const keyword = document.getElementById('searchInput').value.trim().toLowerCase();
+  const region = document.getElementById('regionFilter').value;
+  const prefecture = document.getElementById('prefectureFilter').value;
+  const spring = document.getElementById('springTypeFilter').value;
+  const flowMin = parseFloat(document.getElementById('flowRateMin').value) || 0;
+  const flowMax = parseFloat(document.getElementById('flowRateMax').value) || Infinity;
+  const gensenOnly = document.getElementById('gensenFilter').checked;
+  const sort = document.getElementById('sortFilter').value;
 
-      const filtered = onsenData.filter(onsen =>
-        (keyword === '' || onsen.name.toLowerCase().includes(keyword)) &&
-        (spring === '' || onsen.springType === spring) &&
-        (region === '' || onsen.region === region) &&
-        (!favoritesOnly || favorites.includes(onsen.id)) 
-      );
+  const favorites = JSON.parse(localStorage.getItem('favorites')) || [];
 
-            // 並び替え処理
-        if (sort === 'name-asc') {
-        filtered.sort((a, b) => a.name.localeCompare(b.name));
-        } else if (sort === 'name-desc') {
-        filtered.sort((a, b) => b.name.localeCompare(a.name));
-        } else if (sort === 'region-asc') {
-        filtered.sort((a, b) => a.region.localeCompare(b.region));
-        } else if (sort === 'region-desc') {
-        filtered.sort((a, b) => b.region.localeCompare(a.region));
-        }
+  const filtered = onsenData.filter(onsen =>
+    (keyword === '' || onsen.name.toLowerCase().includes(keyword)) &&
+    (region === '' || onsen.region === region) &&
+    (prefecture === '' || onsen.prefecture === prefecture) &&
+    (spring === '' || onsen.springType === spring) &&
+    (onsen.flowRate >= flowMin && onsen.flowRate <= flowMax) &&
+    (!gensenOnly || onsen.gensen === true) &&
+    (!favoritesOnly || favorites.includes(onsen.id))
+  );
+ // 並び替え
+  if (sort === 'name-asc') {
+    filtered.sort((a, b) => a.name.localeCompare(b.name));
+  } else if (sort === 'name-desc') {
+    filtered.sort((a, b) => b.name.localeCompare(a.name));
+  }
 
 
       renderOnsenCards(filtered);
     };
 
     // イベントリスナー登録（統一管理）
-    searchInput.addEventListener('input', applyFilters);
-    springFilter.addEventListener('change', applyFilters);
-    regionFilter.addEventListener('change', applyFilters);
+    document.getElementById('searchInput').addEventListener('input', applyFilters);
+    document.getElementById('regionFilter').addEventListener('change', applyFilters);
+    document.getElementById('prefectureFilter').addEventListener('change', applyFilters);
+    document.getElementById('springTypeFilter').addEventListener('change', applyFilters);
+    document.getElementById('flowRateMin').addEventListener('input', applyFilters);
+    document.getElementById('flowRateMax').addEventListener('input', applyFilters);
+    document.getElementById('gensenFilter').addEventListener('change', applyFilters);
 
     document.getElementById('favoritesToggle').addEventListener('click', () => {
       favoritesOnly = !favoritesOnly;

@@ -1,20 +1,56 @@
 [
   {
-    "id": "kusatsu",
-    "name": "草津温泉",
-    "region": "群馬県",
-    "springType": "酸性泉",
-    "description": "日本有数の湯量を誇る草津温泉は、強い酸性の泉質で殺菌効果が高く、美肌にも良いとされています。",
-    "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f3d6.png"
-
+  "id": "001",
+  "name": "草津温泉",
+  "region": "関東",
+  "prefecture": "群馬県",
+  "springType": "硫黄泉",
+  "flowRate": 4000,
+  "gensen": true,
+  "imageUrl": "https://source.unsplash.com/800x600/?onsen,japan,1",
+  "description": "..."
+},
+  {
+    "id": "002",
+    "name": "箱根温泉",
+    "region": "関東",
+    "prefecture": "神奈川県",
+    "springType": "硫黄泉",
+    "flowRate": 3000,
+    "gensen": true,
+    "imageUrl": "...",
+    "description": "..."
   },
   {
-    "id": "noboribetsu",
+    "id": "003",
+    "name": "別府温泉",
+    "region": "九州",
+    "prefecture": "大分県",
+    "springType": "塩化物泉",
+    "flowRate": 5000,
+    "gensen": false,
+    "imageUrl": "...",
+    "description": "..."
+  },
+  {
+    "id": "004",
+    "name": "有馬温泉",
+    "region": "関西",
+    "prefecture": "兵庫県",
+    "springType": "炭酸水素塩泉",
+    "flowRate": 2000,
+    "gensen": true,
+    "imageUrl": "...",
+    "description": "..."
+  },
+  {
+    "id": "005",
     "name": "登別温泉",
     "region": "北海道",
+    "prefecture": "北海道",
     "springType": "硫黄泉",
-    "description": "地獄谷を源泉とする登別温泉は、多彩な泉質と自然の迫力ある景観で人気があります。",
-    "imageUrl": "assets/images/kusatsu.jpg"
-
+    "flowRate": 3500,
+    "gensen": true,
+    "imageUrl": "...",
+    "description": "..."
   }
-]
