@@ -1,56 +1,48 @@
 [
   {
-  "id": "001",
-  "name": "草津温泉",
-  "region": "関東",
-  "prefecture": "群馬県",
-  "springType": "硫黄泉",
-  "flowRate": 4000,
-  "gensen": true,
-  "imageUrl": "https://source.unsplash.com/800x600/?onsen,japan,1",
-  "description": "..."
-},
-  {
-    "id": "002",
-    "name": "箱根温泉",
+    "id": 1,
+    "name": "草津温泉",
+    "springType": "酸性泉",
+    "flowRate": 4000,
     "region": "関東",
-    "prefecture": "神奈川県",
-    "springType": "硫黄泉",
-    "flowRate": 3000,
-    "gensen": true,
-    "imageUrl": "...",
-    "description": "..."
+    "prefecture": "群馬県",
+    "gensen": true
   },
   {
-    "id": "003",
-    "name": "別府温泉",
-    "region": "九州",
-    "prefecture": "大分県",
-    "springType": "塩化物泉",
-    "flowRate": 5000,
-    "gensen": false,
-    "imageUrl": "...",
-    "description": "..."
-  },
-  {
-    "id": "004",
+    "id": 2,
     "name": "有馬温泉",
+    "springType": "塩化物泉",
+    "flowRate": 3000,
     "region": "関西",
     "prefecture": "兵庫県",
-    "springType": "炭酸水素塩泉",
-    "flowRate": 2000,
-    "gensen": true,
-    "imageUrl": "...",
-    "description": "..."
+    "gensen": true
   },
   {
-    "id": "005",
+    "id": 3,
+    "name": "別府温泉",
+    "springType": "炭酸水素塩泉",
+    "flowRate": 5000,
+    "region": "九州",
+    "prefecture": "大分県",
+    "gensen": false
+  },
+  {
+    "id": 4,
     "name": "登別温泉",
+    "springType": "硫黄泉",
+    "flowRate": 2500,
     "region": "北海道",
     "prefecture": "北海道",
-    "springType": "硫黄泉",
+    "gensen": true
+  },
+  {
+    "id": 5,
+    "name": "下呂温泉",
+    "springType": "単純温泉",
     "flowRate": 3500,
-    "gensen": true,
-    "imageUrl": "...",
-    "description": "..."
+    "region": "中部",
+    "prefecture": "岐阜県",
+    "gensen": false
   }
+]
+

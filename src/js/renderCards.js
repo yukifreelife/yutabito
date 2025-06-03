@@ -1,4 +1,26 @@
 // 温泉カードをHTMLに描画する
+
+// 温泉名をローマ字IDに変換（画像ファイル名用）
+const onsenNameToId = {
+  '有馬温泉': 'arima',
+  '別府温泉': 'beppu',
+  '草津温泉': 'kusatsu',
+  '道後温泉': 'dogo',
+  '登別温泉': 'noboribetsu',
+  '三朝温泉': 'misasa',
+  '下呂温泉': 'gero',
+  '鳴子温泉': 'naruko'
+};
+
+export function toRomaji(name) {
+  return onsenNameToId[name] || 'default';
+}
+
+export function generateImageUrl(name) {
+  return `assets/images/onsen_${toRomaji(name)}.jpg`;
+}
+
+
 export function renderOnsenCards(data) {
   const container = document.getElementById("onsen-list");
   container.innerHTML = ""; // 初期化
@@ -13,7 +35,7 @@ export function renderOnsenCards(data) {
 
     card.innerHTML = `
      <a href="onsen.html?id=${onsen.id}" class="card-link">
-      <img src="${onsen.imageUrl}" alt="${onsen.name}">
+      <img src="${generateImageUrl(onsen.name)}" alt="${onsen.name}">
       <h3>${onsen.name}</h3>
       <p>${onsen.region}・${onsen.springType}</p>
       <p>${onsen.description}</p>

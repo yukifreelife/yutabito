@@ -1,6 +1,7 @@
+import { generateImageUrl } from './renderCards.js';
 export function renderRecommendedSlider(data) {
   const slider = document.getElementById("recommended-slider");
-
+  slider.innerHTML = "";
   // ランダムに3〜5件抽出
   const shuffled = [...data].sort(() => 0.5 - Math.random());
   const selected = shuffled.slice(0, 5);
@@ -10,7 +11,7 @@ export function renderRecommendedSlider(data) {
     card.className = "slider-card";
     card.href = `onsen.html?id=${onsen.id}`;
     card.innerHTML = `
-      <img src="${onsen.imageUrl}" alt="${onsen.name}">
+      <img src="${generateImageUrl(onsen.name)}" alt="${onsen.name}">
       <h4>${onsen.name}</h4>
     `;
     slider.appendChild(card);
