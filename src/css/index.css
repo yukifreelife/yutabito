@@ -135,7 +135,7 @@
   padding: 8px 12px;
   font-size: 1rem;
   background-color: #fff;
-  border: 1px solid #f08080;
+  border: 1px solid #8fffec;;
   border-radius: 25px;
   cursor: pointer;
   transition: background-color 0.3s ease;
@@ -143,14 +143,34 @@
 }
 
 .favorite-btn:hover {
-  background-color: #ffecec;
+  background-color: #a3f9eb;;
 }
 
 .favorite-btn.active {
-  background-color: #f08080;
+  background-color: #62e5cf;
   color: white;
-  border-color: #f08080;
+  border-color:#6bedd7;;
   font-weight: bold;
+}
+
+.tooltip-icon {
+  cursor: help;
+  margin-left: 5px;
+  font-size: 0.9em;
+  color: #555;
+}
+
+.no-result-message {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #fef3f3;
+  border: 2px solid #ff9999;
+  border-radius: 16px;
+  margin: 40px auto;
+  max-width: 600px;
+  font-size: 1.2rem;
+  color: #b22222;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 

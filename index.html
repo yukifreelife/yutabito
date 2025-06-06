@@ -3,15 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Yutabito - 温泉検索サイト</title>
+    <title>Yutabito - 温泉検索ポータルサイト</title>
     <link rel="stylesheet" href="/src/css/base.css" />
+    <link rel="stylesheet" href="/src/css/components.css" />
     <link rel="stylesheet" href="/src/css/index.css" />
     <script type="module" src="/src/js/main.js"></script>
   </head>
   <body>
-    <header>
-      <h1>Yutabito</h1>
+    <header class="site-header">
+      <h1>Yutabito 温泉検索ポータル</h1>
+      <p>癒しの温泉を見つけよう</p>
+      <nav class="main-nav">
+        <a href="index.html">ホーム</a>
+      </nav>
     </header>
+
 
     <main>
       <section class="slider-section">
@@ -68,18 +74,18 @@
         <input type="number" id="flowRateMin" placeholder="最小湧出量（L/分）" />
         <input type="number" id="flowRateMax" placeholder="最大湧出量（L/分）" />
 
-        <!-- 源泉かけ流し -->
-        <label>
-          <input type="checkbox" id="gensenFilter" />
-          源泉かけ流しのみ表示
-        </label>
-
         <!-- 並び替え（50音順など） -->
         <select id="sortFilter">
           <option value="">並び替え</option>
           <option value="name-asc">名前順（昇順）</option>
           <option value="name-desc">名前順（降順）</option>
         </select>
+         <!-- 源泉かけ流し -->
+        <label>
+          <input type="checkbox" id="gensenFilter" />
+          源泉かけ流しあり
+          <span class="tooltip-icon" title="加水・加温・循環を行わず、湧き出た温泉をそのまま使用する贅沢なスタイルです。">ℹ️</span>
+        </label>
       </section>
 
 
@@ -87,6 +93,12 @@
       <section id="onsen-list" class="onsen-list">
         <!-- JSで温泉カード一覧が挿入される -->
       </section>
+
+      <section id="no-result" class="no-result-message" style="display: none;">
+        条件に合う温泉が見つかりませんでした。<br />
+        条件をゆるめて、もう一度検索してみてください。
+      </section>
+
     </main>
   </body>
 </html>

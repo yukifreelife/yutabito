@@ -3,46 +3,803 @@
     "id": 1,
     "name": "草津温泉",
     "springType": "酸性泉",
-    "flowRate": 4000,
+    "flowRate": 32300,
     "region": "関東",
-    "prefecture": "群馬県",
-    "gensen": true
+    "prefecture": "群馬県"
   },
   {
     "id": 2,
-    "name": "有馬温泉",
-    "springType": "塩化物泉",
-    "flowRate": 3000,
-    "region": "関西",
-    "prefecture": "兵庫県",
-    "gensen": true
+    "name": "道後温泉",
+    "springType": "単純泉",
+    "flowRate": 2000,
+    "region": "四国",
+    "prefecture": "愛媛県"
   },
   {
     "id": 3,
-    "name": "別府温泉",
-    "springType": "炭酸水素塩泉",
-    "flowRate": 5000,
-    "region": "九州",
-    "prefecture": "大分県",
-    "gensen": false
+    "name": "下呂温泉",
+    "springType": "単純泉",
+    "flowRate": 13000,
+    "region": "中部",
+    "prefecture": "岐阜県"
   },
   {
     "id": 4,
-    "name": "登別温泉",
-    "springType": "硫黄泉",
-    "flowRate": 2500,
-    "region": "北海道",
-    "prefecture": "北海道",
-    "gensen": true
+    "name": "別府八湯",
+    "springType": "二酸化炭素泉",
+    "flowRate": 95728,
+    "region": "九州",
+    "prefecture": "大分県"
   },
   {
     "id": 5,
-    "name": "下呂温泉",
-    "springType": "単純温泉",
-    "flowRate": 3500,
+    "name": "有馬温泉",
+    "springType": "含鉄泉・放射能泉",
+    "flowRate": 2000,
+    "region": "近畿",
+    "prefecture": "兵庫県"
+  },
+  {
+    "id": 6,
+    "name": "登別温泉",
+    "springType": "酸性泉",
+    "flowRate": 10000,
+    "region": "北海道",
+    "prefecture": "北海道"
+  },
+  {
+    "id": 7,
+    "name": "指宿温泉",
+    "springType": "塩化物泉",
+    "flowRate": 14000,
+    "region": "九州",
+    "prefecture": "鹿児島県"
+  },
+  {
+    "id": 8,
+    "name": "黒川温泉",
+    "springType": "硫黄泉",
+    "flowRate": 2000,
+    "region": "九州",
+    "prefecture": "熊本県"
+  },
+  {
+    "id": 9,
+    "name": "城崎温泉",
+    "springType": "塩化物泉",
+    "flowRate": 2300,
+    "region": "近畿",
+    "prefecture": "兵庫県"
+  },
+  {
+    "id": 10,
+    "name": "箱根温泉",
+    "springType": "塩化物泉",
+    "flowRate": 20000,
+    "region": "関東",
+    "prefecture": "神奈川県"
+  },
+  {
+    "id": 11,
+    "name": "由布院温泉",
+    "springType": "塩化物泉",
+    "flowRate": 200,
+    "region": "九州",
+    "prefecture": "大分県"
+  },
+  {
+    "id": 12,
+    "name": "伊香保温泉",
+    "springType": "炭酸水素塩泉",
+    "flowRate": 300,
+    "region": "関東",
+    "prefecture": "群馬県"
+  },
+  {
+    "id": 13,
+    "name": "和倉温泉",
+    "springType": "硫酸塩泉",
+    "flowRate": 400,
     "region": "中部",
-    "prefecture": "岐阜県",
-    "gensen": false
+    "prefecture": "石川県"
+  },
+  {
+    "id": 14,
+    "name": "熱海温泉",
+    "springType": "二酸化炭素泉",
+    "flowRate": 500,
+    "region": "中部",
+    "prefecture": "静岡県"
+  },
+  {
+    "id": 15,
+    "name": "奥飛騨温泉郷",
+    "springType": "含鉄泉",
+    "flowRate": 600,
+    "region": "中部",
+    "prefecture": "岐阜県"
+  },
+  {
+    "id": 16,
+    "name": "玉造温泉",
+    "springType": "酸性泉",
+    "flowRate": 700,
+    "region": "中国",
+    "prefecture": "島根県"
+  },
+  {
+    "id": 17,
+    "name": "銀山温泉",
+    "springType": "含よう素泉",
+    "flowRate": 800,
+    "region": "東北",
+    "prefecture": "山形県"
+  },
+  {
+    "id": 18,
+    "name": "月岡温泉",
+    "springType": "硫黄泉",
+    "flowRate": 900,
+    "region": "中部",
+    "prefecture": "新潟県"
+  },
+  {
+    "id": 19,
+    "name": "乳頭温泉郷",
+    "springType": "放射能泉",
+    "flowRate": 1000,
+    "region": "東北",
+    "prefecture": "秋田県"
+  },
+  {
+    "id": 20,
+    "name": "鬼怒川・川治温泉",
+    "springType": "単純泉",
+    "flowRate": 100,
+    "region": "関東",
+    "prefecture": "栃木県"
+  },
+  {
+    "id": 21,
+    "name": "蔵王温泉",
+    "springType": "塩化物泉",
+    "flowRate": 200,
+    "region": "東北",
+    "prefecture": "山形県"
+  },
+  {
+    "id": 22,
+    "name": "十勝川温泉",
+    "springType": "炭酸水素塩泉",
+    "flowRate": 300,
+    "region": "北海道",
+    "prefecture": "北海道"
+  },
+  {
+    "id": 23,
+    "name": "あわら温泉",
+    "springType": "硫酸塩泉",
+    "flowRate": 400,
+    "region": "中部",
+    "prefecture": "福井県"
+  },
+  {
+    "id": 24,
+    "name": "万座温泉",
+    "springType": "二酸化炭素泉",
+    "flowRate": 500,
+    "region": "関東",
+    "prefecture": "群馬県"
+  },
+  {
+    "id": 25,
+    "name": "山代温泉",
+    "springType": "含鉄泉",
+    "flowRate": 600,
+    "region": "中部",
+    "prefecture": "石川県"
+  },
+  {
+    "id": 26,
+    "name": "嬉野温泉",
+    "springType": "酸性泉",
+    "flowRate": 700,
+    "region": "九州",
+    "prefecture": "佐賀県"
+  },
+  {
+    "id": 27,
+    "name": "昼神温泉",
+    "springType": "含よう素泉",
+    "flowRate": 800,
+    "region": "中部",
+    "prefecture": "長野県"
+  },
+  {
+    "id": 28,
+    "name": "秋保温泉",
+    "springType": "硫黄泉",
+    "flowRate": 900,
+    "region": "東北",
+    "prefecture": "宮城県"
+  },
+  {
+    "id": 29,
+    "name": "霧島温泉",
+    "springType": "放射能泉",
+    "flowRate": 1000,
+    "region": "九州",
+    "prefecture": "鹿児島県"
+  },
+  {
+    "id": 30,
+    "name": "三朝温泉",
+    "springType": "単純泉",
+    "flowRate": 100,
+    "region": "中国",
+    "prefecture": "鳥取県"
+  },
+  {
+    "id": 31,
+    "name": "鳴子温泉",
+    "springType": "塩化物泉",
+    "flowRate": 200,
+    "region": "東北",
+    "prefecture": "宮城県"
+  },
+  {
+    "id": 32,
+    "name": "四万温泉",
+    "springType": "炭酸水素塩泉",
+    "flowRate": 300,
+    "region": "関東",
+    "prefecture": "群馬県"
+  },
+  {
+    "id": 33,
+    "name": "みなかみ18湯",
+    "springType": "硫酸塩泉",
+    "flowRate": 400,
+    "region": "関東",
+    "prefecture": "群馬県"
+  },
+  {
+    "id": 34,
+    "name": "白骨温泉",
+    "springType": "二酸化炭素泉",
+    "flowRate": 500,
+    "region": "中部",
+    "prefecture": "長野県"
+  },
+  {
+    "id": 35,
+    "name": "湯田中渋温泉郷",
+    "springType": "含鉄泉",
+    "flowRate": 600,
+    "region": "中部",
+    "prefecture": "長野県"
+  },
+  {
+    "id": 36,
+    "name": "湯の川温泉",
+    "springType": "酸性泉",
+    "flowRate": 700,
+    "region": "北海道",
+    "prefecture": "北海道"
+  },
+  {
+    "id": 37,
+    "name": "定山渓温泉",
+    "springType": "含よう素泉",
+    "flowRate": 800,
+    "region": "北海道",
+    "prefecture": "北海道"
+  },
+  {
+    "id": 38,
+    "name": "南紀白浜温泉",
+    "springType": "硫黄泉",
+    "flowRate": 900,
+    "region": "近畿",
+    "prefecture": "和歌山県"
+  },
+  {
+    "id": 39,
+    "name": "平磯温泉",
+    "springType": "放射能泉",
+    "flowRate": 1000,
+    "region": "北海道",
+    "prefecture": "北海道"
+  },
+  {
+    "id": 40,
+    "name": "山中温泉",
+    "springType": "単純泉",
+    "flowRate": 100,
+    "region": "中部",
+    "prefecture": "石川県"
+  },
+  {
+    "id": 41,
+    "name": "宇奈月温泉",
+    "springType": "塩化物泉",
+    "flowRate": 200,
+    "region": "中部",
+    "prefecture": "富山県"
+  },
+  {
+    "id": 42,
+    "name": "雲仙温泉",
+    "springType": "炭酸水素塩泉",
+    "flowRate": 300,
+    "region": "九州",
+    "prefecture": "長崎県"
+  },
+  {
+    "id": 43,
+    "name": "上諏訪温泉",
+    "springType": "硫酸塩泉",
+    "flowRate": 400,
+    "region": "中部",
+    "prefecture": "長野県"
+  },
+  {
+    "id": 44,
+    "name": "飛騨高山温泉",
+    "springType": "二酸化炭素泉",
+    "flowRate": 500,
+    "region": "中部",
+    "prefecture": "岐阜県"
+  },
+  {
+    "id": 45,
+    "name": "酸ヶ湯温泉",
+    "springType": "含鉄泉",
+    "flowRate": 600,
+    "region": "東北",
+    "prefecture": "青森県"
+  },
+  {
+    "id": 46,
+    "name": "野沢温泉",
+    "springType": "酸性泉",
+    "flowRate": 700,
+    "region": "中部",
+    "prefecture": "長野県"
+  },
+  {
+    "id": 47,
+    "name": "修善寺温泉",
+    "springType": "含よう素泉",
+    "flowRate": 800,
+    "region": "中部",
+    "prefecture": "静岡県"
+  },
+  {
+    "id": 48,
+    "name": "長門湯本温泉",
+    "springType": "硫黄泉",
+    "flowRate": 900,
+    "region": "中国",
+    "prefecture": "山口県"
+  },
+  {
+    "id": 49,
+    "name": "花巻温泉郷",
+    "springType": "放射能泉",
+    "flowRate": 1000,
+    "region": "東北",
+    "prefecture": "岩手県"
+  },
+  {
+    "id": 50,
+    "name": "石和温泉",
+    "springType": "単純泉",
+    "flowRate": 100,
+    "region": "中部",
+    "prefecture": "山梨県"
+  },
+  {
+    "id": 51,
+    "name": "長良川温泉",
+    "springType": "塩化物泉",
+    "flowRate": 200,
+    "region": "中部",
+    "prefecture": "岐阜県"
+  },
+  {
+    "id": 52,
+    "name": "阿寒湖温泉",
+    "springType": "炭酸水素塩泉",
+    "flowRate": 300,
+    "region": "北海道",
+    "prefecture": "北海道"
+  },
+  {
+    "id": 53,
+    "name": "湯河原温泉",
+    "springType": "硫酸塩泉",
+    "flowRate": 400,
+    "region": "関東",
+    "prefecture": "神奈川県"
+  },
+  {
+    "id": 54,
+    "name": "稲取温泉",
+    "springType": "二酸化炭素泉",
+    "flowRate": 500,
+    "region": "中部",
+    "prefecture": "静岡県"
+  },
+  {
+    "id": 55,
+    "name": "川湯温泉",
+    "springType": "含鉄泉",
+    "flowRate": 600,
+    "region": "北海道",
+    "prefecture": "北海道"
+  },
+  {
+    "id": 56,
+    "name": "層雲峡温泉",
+    "springType": "酸性泉",
+    "flowRate": 700,
+    "region": "北海道",
+    "prefecture": "北海道"
+  },
+  {
+    "id": 57,
+    "name": "母畑温泉",
+    "springType": "含よう素泉",
+    "flowRate": 800,
+    "region": "東北",
+    "prefecture": "福島県"
+  },
+  {
+    "id": 58,
+    "name": "ウトロ温泉",
+    "springType": "硫黄泉",
+    "flowRate": 900,
+    "region": "北海道",
+    "prefecture": "北海道"
+  },
+  {
+    "id": 59,
+    "name": "洞爺湖温泉",
+    "springType": "放射能泉",
+    "flowRate": 1000,
+    "region": "北海道",
+    "prefecture": "北海道"
+  },
+  {
+    "id": 60,
+    "name": "かみのやま温泉",
+    "springType": "単純泉",
+    "flowRate": 100,
+    "region": "東北",
+    "prefecture": "山形県"
+  },
+  {
+    "id": 61,
+    "name": "越後湯沢温泉",
+    "springType": "塩化物泉",
+    "flowRate": 200,
+    "region": "中部",
+    "prefecture": "新潟県"
+  },
+  {
+    "id": 62,
+    "name": "松之山温泉",
+    "springType": "炭酸水素塩泉",
+    "flowRate": 300,
+    "region": "中部",
+    "prefecture": "新潟県"
+  },
+  {
+    "id": 63,
+    "name": "観音温泉",
+    "springType": "硫酸塩泉",
+    "flowRate": 400,
+    "region": "中部",
+    "prefecture": "静岡県"
+  },
+  {
+    "id": 64,
+    "name": "人吉温泉",
+    "springType": "二酸化炭素泉",
+    "flowRate": 500,
+    "region": "九州",
+    "prefecture": "熊本県"
+  },
+  {
+    "id": 65,
+    "name": "山鹿・平山温泉",
+    "springType": "含鉄泉",
+    "flowRate": 600,
+    "region": "九州",
+    "prefecture": "熊本県"
+  },
+  {
+    "id": 66,
+    "name": "伊東温泉",
+    "springType": "酸性泉",
+    "flowRate": 700,
+    "region": "中部",
+    "prefecture": "静岡県"
+  },
+  {
+    "id": 67,
+    "name": "皆生温泉",
+    "springType": "含よう素泉",
+    "flowRate": 800,
+    "region": "中国",
+    "prefecture": "鳥取県"
+  },
+  {
+    "id": 68,
+    "name": "那須温泉",
+    "springType": "硫黄泉",
+    "flowRate": 900,
+    "region": "関東",
+    "prefecture": "栃木県"
+  },
+  {
+    "id": 69,
+    "name": "玉川温泉",
+    "springType": "放射能泉",
+    "flowRate": 1000,
+    "region": "東北",
+    "prefecture": "秋田県"
+  },
+  {
+    "id": 70,
+    "name": "高湯温泉",
+    "springType": "単純泉",
+    "flowRate": 100,
+    "region": "東北",
+    "prefecture": "福島県"
+  },
+  {
+    "id": 71,
+    "name": "こんぴら温泉郷",
+    "springType": "塩化物泉",
+    "flowRate": 200,
+    "region": "四国",
+    "prefecture": "香川県"
+  },
+  {
+    "id": 72,
+    "name": "東山温泉",
+    "springType": "炭酸水素塩泉",
+    "flowRate": 300,
+    "region": "東北",
+    "prefecture": "福島県"
+  },
+  {
+    "id": 73,
+    "name": "塩原温泉",
+    "springType": "硫酸塩泉",
+    "flowRate": 400,
+    "region": "関東",
+    "prefecture": "栃木県"
+  },
+  {
+    "id": 74,
+    "name": "湯西川温泉",
+    "springType": "二酸化炭素泉",
+    "flowRate": 500,
+    "region": "関東",
+    "prefecture": "栃木県"
+  },
+  {
+    "id": 75,
+    "name": "金太郎温泉",
+    "springType": "含鉄泉",
+    "flowRate": 600,
+    "region": "中部",
+    "prefecture": "富山県"
+  },
+  {
+    "id": 76,
+    "name": "黄金崎不老ふ死温泉",
+    "springType": "酸性泉",
+    "flowRate": 700,
+    "region": "東北",
+    "prefecture": "青森県"
+  },
+  {
+    "id": 77,
+    "name": "おごと温泉",
+    "springType": "含よう素泉",
+    "flowRate": 800,
+    "region": "近畿",
+    "prefecture": "滋賀県"
+  },
+  {
+    "id": 78,
+    "name": "湯村温泉",
+    "springType": "硫黄泉",
+    "flowRate": 900,
+    "region": "近畿",
+    "prefecture": "兵庫県"
+  },
+  {
+    "id": 79,
+    "name": "阿蘇温泉郷",
+    "springType": "放射能泉",
+    "flowRate": 1000,
+    "region": "九州",
+    "prefecture": "熊本県"
+  },
+  {
+    "id": 80,
+    "name": "あつみ温泉",
+    "springType": "単純泉",
+    "flowRate": 100,
+    "region": "東北",
+    "prefecture": "山形県"
+  },
+  {
+    "id": 81,
+    "name": "芦ノ牧温泉",
+    "springType": "塩化物泉",
+    "flowRate": 200,
+    "region": "東北",
+    "prefecture": "福島県"
+  },
+  {
+    "id": 82,
+    "name": "下田温泉",
+    "springType": "炭酸水素塩泉",
+    "flowRate": 300,
+    "region": "中部",
+    "prefecture": "静岡県"
+  },
+  {
+    "id": 83,
+    "name": "ニセコ温泉郷",
+    "springType": "硫酸塩泉",
+    "flowRate": 400,
+    "region": "北海道",
+    "prefecture": "北海道"
+  },
+  {
+    "id": 84,
+    "name": "鳥羽温泉郷",
+    "springType": "二酸化炭素泉",
+    "flowRate": 500,
+    "region": "近畿",
+    "prefecture": "三重県"
+  },
+  {
+    "id": 85,
+    "name": "日光湯元温泉",
+    "springType": "含鉄泉",
+    "flowRate": 600,
+    "region": "関東",
+    "prefecture": "栃木県"
+  },
+  {
+    "id": 86,
+    "name": "南紀勝浦温泉",
+    "springType": "酸性泉",
+    "flowRate": 700,
+    "region": "近畿",
+    "prefecture": "和歌山県"
+  },
+  {
+    "id": 87,
+    "name": "洲本温泉",
+    "springType": "含よう素泉",
+    "flowRate": 800,
+    "region": "近畿",
+    "prefecture": "兵庫県"
+  },
+  {
+    "id": 88,
+    "name": "祖谷温泉",
+    "springType": "硫黄泉",
+    "flowRate": 900,
+    "region": "四国",
+    "prefecture": "徳島県"
+  },
+  {
+    "id": 89,
+    "name": "浅虫温泉",
+    "springType": "放射能泉",
+    "flowRate": 1000,
+    "region": "東北",
+    "prefecture": "青森県"
+  },
+  {
+    "id": 90,
+    "name": "河口湖温泉",
+    "springType": "単純泉",
+    "flowRate": 100,
+    "region": "中部",
+    "prefecture": "山梨県"
+  },
+  {
+    "id": 91,
+    "name": "扉温泉",
+    "springType": "塩化物泉",
+    "flowRate": 200,
+    "region": "中部",
+    "prefecture": "長野県"
+  },
+  {
+    "id": 92,
+    "name": "瀬波温泉",
+    "springType": "炭酸水素塩泉",
+    "flowRate": 300,
+    "region": "中部",
+    "prefecture": "新潟県"
+  },
+  {
+    "id": 93,
+    "name": "長島温泉",
+    "springType": "硫酸塩泉",
+    "flowRate": 400,
+    "region": "近畿",
+    "prefecture": "三重県"
+  },
+  {
+    "id": 94,
+    "name": "つなぎ温泉",
+    "springType": "二酸化炭素泉",
+    "flowRate": 500,
+    "region": "東北",
+    "prefecture": "岩手県"
+  },
+  {
+    "id": 95,
+    "name": "磐梯熱海温泉",
+    "springType": "含鉄泉",
+    "flowRate": 600,
+    "region": "東北",
+    "prefecture": "福島県"
+  },
+  {
+    "id": 96,
+    "name": "別所温泉",
+    "springType": "酸性泉",
+    "flowRate": 700,
+    "region": "中部",
+    "prefecture": "長野県"
+  },
+  {
+    "id": 97,
+    "name": "天童温泉",
+    "springType": "含よう素泉",
+    "flowRate": 800,
+    "region": "東北",
+    "prefecture": "山形県"
+  },
+  {
+    "id": 98,
+    "name": "鴨川温泉",
+    "springType": "硫黄泉",
+    "flowRate": 900,
+    "region": "関東",
+    "prefecture": "千葉県"
+  },
+  {
+    "id": 99,
+    "name": "西山温泉",
+    "springType": "放射能泉",
+    "flowRate": 1000,
+    "region": "中部",
+    "prefecture": "山梨県"
+  },
+  {
+    "id": 100,
+    "name": "作並温泉",
+    "springType": "単純泉",
+    "flowRate": 100,
+    "region": "東北",
+    "prefecture": "宮城県"
   }
 ]
+
+
 

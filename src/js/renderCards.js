@@ -1,5 +1,3 @@
-// 温泉カードをHTMLに描画する
-
 // 温泉名をローマ字IDに変換（画像ファイル名用）
 const onsenNameToId = {
   '有馬温泉': 'arima',
@@ -73,12 +71,13 @@ export function updateFavoriteButtons() {
   const favorites = JSON.parse(localStorage.getItem('favorites')) || [];
 
   document.querySelectorAll('.favorite-btn').forEach(btn => {
-    const id = btn.getAttribute('data-id');
+    const id = parseInt(btn.getAttribute('data-id'), 10); // ← ここを変更
+
     if (favorites.includes(id)) {
-      btn.classList.add('active');               // ← クラス追加
+      btn.classList.add('active');
       btn.textContent = '❤️ お気に入り済み';
     } else {
-      btn.classList.remove('active');            // ← クラス削除
+      btn.classList.remove('active'); 
       btn.textContent = '🤍 お気に入り';
     }
   });

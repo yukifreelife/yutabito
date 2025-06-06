@@ -1,0 +1,45 @@
+:root {
+  --color-text: #2c3e50;
+  --color-accent: #4aa3df;
+  --color-accent-hover: #2d91c2;
+  --color-button-bg: rgba(255, 255, 255, 0.85);
+  --color-button-border: #ffffff80;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Helvetica Neue', 'Hiragino Kaku Gothic ProN', sans-serif;
+  color: var(--color-text);
+  background: linear-gradient(to bottom right,#fefcfb);
+  min-height: 100vh;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+/* 共通リンクスタイル */
+a {
+  color: var(--color-accent);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--color-accent-hover);
+}
+
+/* ボタン */
+button {
+  background-color: var(--color-button-bg);
+  color: var(--color-accent);
+  border: 1px solid var(--color-button-border);
+  padding: 10px 18px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(6px); /* ガラス風 */
+}
+
+button:hover {
+  background-color: var(--color-accent);
+  color: white;
+}

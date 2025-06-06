@@ -55,9 +55,15 @@ const applyFilters = () => {
     filtered.sort((a, b) => b.name.localeCompare(a.name));
   }
 
+  renderOnsenCards(filtered);
 
-      renderOnsenCards(filtered);
-    };
+  const noResultSection = document.getElementById("no-result");
+  if (filtered.length === 0) {
+    noResultSection.style.display = "block";
+  } else {
+    noResultSection.style.display = "none";
+  }
+};
 
     // イベントリスナー登録（統一管理）
     document.getElementById('searchInput').addEventListener('input', applyFilters);
