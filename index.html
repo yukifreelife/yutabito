@@ -1,105 +1,39 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Yutabito - 温泉検索ポータルサイト</title>
-    <link rel="stylesheet" href="/src/css/base.css" />
-    <link rel="stylesheet" href="/src/css/components.css" />
-    <link rel="stylesheet" href="/src/css/index.css" />
-    <script type="module" src="/src/js/main.js"></script>
-  </head>
-  <body>
-    <header class="site-header">
-      <h1>Yutabito 温泉検索ポータル</h1>
-      <p>癒しの温泉を見つけよう</p>
-      <nav class="main-nav">
-        <a href="index.html">ホーム</a>
-      </nav>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yutabito 温泉検索</title>
+  <link rel="stylesheet" href="/src/css/base.css" />
+  <link rel="stylesheet" href="/src/css/components.css" />
+  <link rel="stylesheet" href="/src/css/index.css" />
+</head>
+<body>
+  <header class="site-header">
+    <h1>Yutabito</h1>
+    <p>癒しの温泉を検索しよう</p>
+    <nav class="main-nav">
+      <a href="index.html" class="active">ホーム</a>
+      <a href="list.html">温泉一覧</a>
+    </nav>
+  </header>
 
+  <!-- 🔍 検索ウインドウ -->
+  <section class="search-section">
+    <input type="text" id="searchInput" placeholder="温泉名で検索..." />
+    <!-- 必要なら今後selectやcheckboxもここに追加 -->
+  </section>
 
-    <main>
-      <section class="slider-section">
-        <h2>おすすめ温泉</h2>
-        <h3>※ページ更新でおすすめ温泉がかわります</h3>
-        <div id="recommended-slider" class="slider-container">
-          <!-- JSで温泉カードが挿入される -->
-        </div>
-      </section>
+  <!-- 🧡 おすすめ温泉カード -->
+  <section class="recommended-section">
+    <h2>おすすめ温泉</h2>
+    <div id="recommended-slider" class="slider-container"></div>
+  </section>
 
-      <button id="favoritesToggle">❤️ お気に入りのみ表示</button>
+  <footer class="site-footer">
+    <p>&copy; 2025 Yutabito</p>
+  </footer>
 
-
-      <section class="search-section">
-        <input
-            type="text"
-            id="searchInput"
-            placeholder="温泉名で検索（例：草津、別府）"
-        />
-      </section>
-
-      <section class="filter-section">
-        <label for="springFilter">絞り込み：</label>
-
-        <!-- 地域 -->
-        <select id="regionFilter">
-          <option value="">地域を選択</option>
-          <option value="東北">東北</option>
-          <option value="関東">関東</option>
-          <!-- 必要に応じて定義 -->
-        </select>
-         <!-- 都道府県 -->
-        <select id="prefectureFilter">
-          <option value="">都道府県を選択</option>
-          <option value="北海道">北海道</option>
-          <option value="青森県">青森県</option>
-          <!-- ...以下略（47都道府県分） -->
-        </select>
-        <!-- 泉質 -->
-        <select id="springTypeFilter">
-          <option value="">泉質を選択</option>
-          <option value="単純温泉">単純温泉</option>
-          <option value="塩化物泉">塩化物泉</option>
-          <option value="炭酸水素塩泉">炭酸水素塩泉</option>
-          <option value="硫酸塩泉">硫酸塩泉</option>
-          <option value="二酸化炭素泉">二酸化炭素泉</option>
-          <option value="含鉄泉">含鉄泉</option>
-          <option value="酸性泉">酸性泉</option>
-          <option value="含よう素泉">含よう素泉</option>
-          <option value="硫黄泉">硫黄泉</option>
-          <option value="放射能泉">放射能泉</option>
-        </select>
-
-        <!-- 湧出量（例：リスト or 数値） -->
-        <input type="number" id="flowRateMin" placeholder="最小湧出量（L/分）" />
-        <input type="number" id="flowRateMax" placeholder="最大湧出量（L/分）" />
-
-        <!-- 並び替え（50音順など） -->
-        <select id="sortFilter">
-          <option value="">並び替え</option>
-          <option value="name-asc">名前順（昇順）</option>
-          <option value="name-desc">名前順（降順）</option>
-        </select>
-         <!-- 源泉かけ流し -->
-        <label>
-          <input type="checkbox" id="gensenFilter" />
-          源泉かけ流しあり
-          <span class="tooltip-icon" title="加水・加温・循環を行わず、湧き出た温泉をそのまま使用する贅沢なスタイルです。">ℹ️</span>
-        </label>
-      </section>
-
-
-
-      <section id="onsen-list" class="onsen-list">
-        <!-- JSで温泉カード一覧が挿入される -->
-      </section>
-
-      <section id="no-result" class="no-result-message" style="display: none;">
-        条件に合う温泉が見つかりませんでした。<br />
-        条件をゆるめて、もう一度検索してみてください。
-      </section>
-
-    </main>
-  </body>
+  <script type="module" src="/src/js/main.js"></script>
+</body>
 </html>

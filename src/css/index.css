@@ -1,122 +1,7 @@
-.onsen-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  padding: 1rem;
-  justify-content: center;
-}
-
-.onsen-card {
-  width: 250px;
-  border: 1px solid #ccc;
-  border-radius:12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  overflow: hidden;
-  padding: 0;
-  margin: 12px;
-  transition: transform 0.2s ease;
-  background-color: #fff;
-  flex-shrink: 0;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.onsen-card:hover {
-  transform: translateY(-4px);
-}
-
-.onsen-card img {
-  width: 100%;
-  height: 160px;
-  object-fit: cover;
-  border-radius: 4px;
-  border-bottom: 1px solid #ddd;
-}
-
-.onsen-card h3 {
-  font-size: 1.1rem;
-  margin: 0.5em 0 0.3em;
-  padding: 0 0.5em;
-}
-
-.onsen-card p {
-  font-size: 0.9rem;
-  padding: 0 0.5em;
-  margin: 0.3em 0;
-}
-
-
-.favorite-btn {
-  margin-top: 0.5rem;
-  align-self: center;
-}
-
-.card-link {
-  text-decoration: none;
-  color: inherit;
-  display: block;
-  transition: transform 0.2s ease;
-}
-
-.card-link:hover {
-  transform: scale(1.03);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-.slider-section {
-  padding: 1rem;
-  margin-bottom: 2rem;
-}
-
-.slider-container {
-  display: flex;
-  overflow-x: auto;
-  gap: 1rem;
-  padding-bottom: 1rem;
-  scroll-snap-type: x mandatory;
-}
-
-.slider-card {
-  flex: 0 0 auto;
-  width: 180px;
-  height: 200px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  background: #fff;
-  border-radius: 10px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-  text-align: center;
-  scroll-snap-align: start;
-  text-decoration: none;
-  color: inherit;
-  overflow: hidden;
-}
-
-.slider-card img {
-  width: 100%;
-  border-radius: 10px 10px 0 0;
-  height: 120px;
-  object-fit: cover;
-}
-
-.filter-section {
-  text-align: center;
-  margin: 1rem 0;
-}
-
-#springFilter {
-  padding: 0.5rem 1rem;
-  font-size: 1rem;
-  border-radius: 6px;
-  border: 1px solid #ccc;
-}
-
+/* 検索エリア */
 .search-section {
+  margin: 2rem auto 1rem;
   text-align: center;
-  margin: 1rem 0;
 }
 
 #searchInput {
@@ -128,67 +13,78 @@
   border-radius: 8px;
 }
 
-.favorite-btn {
-  display: block;
-  width: 90%;
-  margin: 10px auto 15px;
-  padding: 8px 12px;
-  font-size: 1rem;
-  background-color: #fff;
-  border: 1px solid #8fffec;;
-  border-radius: 25px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+/* おすすめ温泉セクション */
+.recommended-section {
+  padding: 2rem;
   text-align: center;
+}
+
+.slider-container {
+  display: flex;
+  overflow-x: auto;
+  gap: 1rem;
+  padding-bottom: 1rem;
+  scroll-snap-type: x mandatory;
+  justify-content: center;
+}
+
+.slider-card {
+  flex: 0 0 auto;
+  width: 180px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  scroll-snap-align: start;
+  text-decoration: none;
+  color: inherit;
+  overflow: hidden;
+  position: relative;
+}
+
+.slider-card img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+.slider-card h4 {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+}
+
+/* お気に入りボタン（ハート型） */
+.favorite-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: none;
+  border: none;
+  font-size: 1.3rem;
+  cursor: pointer;
+  z-index: 2;
+  transition: transform 0.2s;
 }
 
 .favorite-btn:hover {
-  background-color: #a3f9eb;;
+  transform: scale(1.2);
 }
 
 .favorite-btn.active {
-  background-color: #62e5cf;
-  color: white;
-  border-color:#6bedd7;;
-  font-weight: bold;
+  color: red;
 }
 
-.tooltip-icon {
-  cursor: help;
-  margin-left: 5px;
-  font-size: 0.9em;
-  color: #555;
-}
-
-.no-result-message {
-  text-align: center;
-  padding: 40px 20px;
-  background-color: #fef3f3;
-  border: 2px solid #ff9999;
-  border-radius: 16px;
-  margin: 40px auto;
-  max-width: 600px;
-  font-size: 1.2rem;
-  color: #b22222;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-
+/* レスポンシブ */
 @media (max-width: 600px) {
-  .onsen-list {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .onsen-card {
-    width: 90%;
-    max-width: 320px;
-  }
-
   .slider-container {
     flex-direction: column;
-    gap: 1rem;
     overflow-x: visible;
+    gap: 1rem;
   }
 
   .slider-card {
@@ -197,8 +93,11 @@
     margin: 0 auto;
   }
 
-  h1, h2 {
-    font-size: 1.4rem;
-    text-align: center;
+  #searchInput {
+    font-size: 0.95rem;
+  }
+
+  .recommended-section h2 {
+    font-size: 1.2rem;
   }
 }
