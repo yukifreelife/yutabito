@@ -16,7 +16,8 @@ fetch('/onsen.json')
 
 function loadNextBatch() {
   const nextItems = onsenData.slice(currentIndex, currentIndex + ITEMS_PER_PAGE);
-  renderOnsenCards(nextItems, true); // 上書きではなく「追加」表示に修正が必要
+  renderOnsenCards(nextItems, true);
+  setupFavoriteButtons();
   currentIndex += ITEMS_PER_PAGE;
 
   if (currentIndex >= onsenData.length) {

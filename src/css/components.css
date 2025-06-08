@@ -78,3 +78,72 @@
   background-color: #3f87a6;
   color: #fff;
 }
+
+.slider-card {
+  position: relative;
+  display: block;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+  margin: 1rem;
+  padding-bottom: 2.5rem;
+}
+
+.slider-card:hover {
+  transform: scale(1.02);
+}
+
+.slider-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  display: block;
+  border-radius: 12px 12px 0 0;
+}
+
+.slider-card h4 {
+  margin: 0.5rem;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.card-img-wrapper {
+  position: relative;
+}
+
+.card-img-wrapper img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 12px 12px 0 0;
+  display: block;
+}
+
+.favorite-btn {
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #ccc;
+  z-index: 2;
+  transition: color 0.3s ease, transform 0.2s ease;
+  line-height: 1;
+  padding: 0;
+}
+
+.favorite-btn:hover {
+  background-color: rgba(255, 182, 193, 0.2); /* うっすらピンク */
+  color: #ff4d6d;
+  transform: scale(1.2);
+}
+
+.favorite-btn.active {
+  color: red;
+}
+

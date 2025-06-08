@@ -44,6 +44,7 @@
   color: inherit;
   overflow: hidden;
   position: relative;
+  padding-bottom: 2.5rem; 
 }
 
 .slider-card img {
@@ -56,27 +57,6 @@
 .slider-card h4 {
   margin: 0.5rem 0;
   font-size: 1rem;
-}
-
-/* お気に入りボタン（ハート型） */
-.favorite-btn {
-  position: absolute;
-  top: 8px;
-  right: 8px;
-  background: none;
-  border: none;
-  font-size: 1.3rem;
-  cursor: pointer;
-  z-index: 2;
-  transition: transform 0.2s;
-}
-
-.favorite-btn:hover {
-  transform: scale(1.2);
-}
-
-.favorite-btn.active {
-  color: red;
 }
 
 /* レスポンシブ */

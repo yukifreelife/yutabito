@@ -7,6 +7,8 @@ function renderOnsenCards(onsenList, append = false) {
   }
 
   onsenList.forEach(onsen => {
+    console.log("画像パス確認:", `/assets/images/onsen_${onsen.romaji}.jpg`);
+
     const card = document.createElement('div');
     card.className = 'onsen-card';
 
