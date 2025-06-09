@@ -21,6 +21,7 @@ export function renderRecommendedSlider(data) {
       <img src="${generateImageUrl(onsen.romaji)}" alt="${onsen.name}">
       <h4>${onsen.name}</h4>
       <button class="favorite-btn" data-id="${onsen.id}">♡</button>
+
     `;
 
     slider.appendChild(card);

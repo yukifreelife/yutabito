@@ -1,12 +1,14 @@
-export function setupFavoriteButtons() {
+export function setupFavoriteButtons(removeCardOnUnfavorite = false) {
   const buttons = document.querySelectorAll(".favorite-btn");
-  const favorites = JSON.parse(localStorage.getItem("favorites") || "[]");
 
   buttons.forEach(btn => {
-    const id = btn.dataset.id;
+    const onsenId = String(btn.dataset.id);
 
-    // 初期状態を設定
-    if (favorites.includes(id)) {
+    // 常に最新を取得（ここ重要）
+    let favorites = new Set(JSON.parse(localStorage.getItem("favorites") || "[]").map(String));
+
+    // 初期状態設定
+    if (favorites.has(onsenId)) {
       btn.classList.add("active");
       btn.textContent = "♥";
     } else {
@@ -14,24 +16,30 @@ export function setupFavoriteButtons() {
       btn.textContent = "♡";
     }
 
-    // クリックイベント登録
     btn.addEventListener("click", (e) => {
       e.preventDefault();
       e.stopPropagation();
 
-      let updated = [...favorites];
+      // イベントごとに再取得（ここも重要）
+      favorites = new Set(JSON.parse(localStorage.getItem("favorites") || "[]").map(String));
 
-      if (updated.includes(id)) {
-        updated = updated.filter(item => item !== id);
+      if (favorites.has(onsenId)) {
+        favorites.delete(onsenId);
         btn.classList.remove("active");
         btn.textContent = "♡";
+
+        if (removeCardOnUnfavorite) {
+          const card = btn.closest(".card");
+          if (card) card.remove();
+        }
+
       } else {
-        updated.push(id);
+        favorites.add(onsenId);
         btn.classList.add("active");
         btn.textContent = "♥";
       }
 
-      localStorage.setItem("favorites", JSON.stringify(updated));
+      localStorage.setItem("favorites", JSON.stringify([...favorites]));
     });
   });
 }

@@ -20,7 +20,7 @@ function renderOnsenCards(onsenList, append = false) {
       <div class="card-content">
         <h3>${onsen.name}</h3>
         <p>${onsen.description || '癒しの温泉地です。'}</p>
-        <button class="favorite-btn" data-id="${onsen.name}">♡</button>
+        <button class="favorite-btn" data-id="${String(onsen.id)}">♡</button>
       </div>
     `;
 
