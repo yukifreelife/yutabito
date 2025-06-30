@@ -1,3 +1,6 @@
+import { setupFavoriteButtons } from './favorite.js';
+
+
 // 温泉カードを生成してページに追加する関数
 function renderOnsenCards(onsenList, append = false) {
   const container = document.getElementById('onsen-list');
@@ -31,31 +34,4 @@ function renderOnsenCards(onsenList, append = false) {
 }
 
 // お気に入りボタンの設定
-function setupFavoriteButtons() {
-  const buttons = document.querySelectorAll('.favorite-btn');
-  const favorites = JSON.parse(localStorage.getItem('favorites') || '[]');
-
-  buttons.forEach(btn => {
-    const id = btn.dataset.id;
-    if (favorites.includes(id)) {
-      btn.classList.add('active');
-      btn.textContent = '♥';
-    }
-
-    btn.addEventListener('click', () => {
-      let updated = [...favorites];
-      if (updated.includes(id)) {
-        updated = updated.filter(item => item !== id);
-        btn.classList.remove('active');
-        btn.textContent = '♡';
-      } else {
-        updated.push(id);
-        btn.classList.add('active');
-        btn.textContent = '♥';
-      }
-      localStorage.setItem('favorites', JSON.stringify(updated));
-    });
-  });
-}
-
 export { renderOnsenCards };

@@ -27,5 +27,6 @@ export function renderRecommendedSlider(data) {
     slider.appendChild(card);
   });
   setupFavoriteButtons();
+  
 }
 
