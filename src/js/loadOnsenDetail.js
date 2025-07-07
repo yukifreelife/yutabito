@@ -1,12 +1,13 @@
+import { setupFavoriteButtons } from './favorite.js';
 export function loadOnsenDetail(data) {
   // URLパラメータから ?id=〇〇 を取得
   const params = new URLSearchParams(window.location.search);
-  const onsenId = params.get("id");
+  const onsenId = Number(params.get("id"));
 
   // 該当温泉データを検索
-  const onsen = data.find(o => o.id === onsenId);
-  const container = document.getElementById("onsen-detail");
 
+  const container = document.getElementById("onsen-detail");
+  const onsen = data.find(o => o.id === onsenId);
   if (!onsen) {
     container.innerHTML = `<p>温泉情報が見つかりませんでした。</p>`;
     return;
@@ -34,12 +35,17 @@ export function loadOnsenDetail(data) {
     <p><strong>地域：</strong>${onsen.region}</p>
     <p><strong>泉質：</strong>${onsen.springType}</p>
 
+    <button class="favorite-btn" data-id="${onsen.id}">♡</button>
+
+
     <div class="btn-group">
       <a class="btn" href="https://www.google.com/search?q=${onsen.name}+旅館" target="_blank">旅館を探す</a>
       <a class="btn secondary" href="${kankouLink}" target="_blank">観光協会サイト</a>
     </div>
 
     <h3>地図で場所を確認</h3>
-    ${googleMapEmbed}
+    ${mapEmbed}
   `;
+
+  setupFavoriteButtons();
 }

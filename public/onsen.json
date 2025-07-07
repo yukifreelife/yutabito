@@ -6,7 +6,9 @@
     "springType": "酸性泉",
     "flowRate": 32300,
     "region": "関東",
-    "prefecture": "群馬県"
+    "prefecture": "群馬県",
+    "description": "日本三名泉のひとつで、強い酸性泉が特徴。湯畑や足湯、食べ歩きも楽しめる温泉街。",
+    "mapQuery": "草津温泉"
   },
   {
     "id": 2,
@@ -15,7 +17,9 @@
     "springType": "単純泉",
     "flowRate": 2000,
     "region": "四国",
-    "prefecture": "愛媛県"
+    "prefecture": "愛媛県",
+    "description": "日本最古の温泉とされ、歴史ある道後温泉本館が有名。温泉街の情緒も魅力。",
+    "mapQuery": "道後温泉"
   },
   {
     "id": 3,
@@ -24,7 +28,9 @@
     "springType": "単純泉",
     "flowRate": 13000,
     "region": "中部",
-    "prefecture": "岐阜県"
+    "prefecture": "岐阜県",
+    "description": "日本三名泉のひとつ。滑らかな湯ざわりと豊富な湯量が自慢の温泉地。",
+    "mapQuery": "下呂温泉"
   },
   {
     "id": 4,
@@ -33,7 +39,9 @@
     "springType": "二酸化炭素泉",
     "flowRate": 95728,
     "region": "九州",
-    "prefecture": "大分県"
+    "prefecture": "大分県",
+    "description": "源泉数・湧出量ともに日本一。多彩な泉質と地獄めぐりが有名。",
+    "mapQuery": "別府八湯"
   },
   {
     "id": 5,
@@ -42,7 +50,9 @@
     "springType": "含鉄泉・放射能泉",
     "flowRate": 2000,
     "region": "近畿",
-    "prefecture": "兵庫県"
+    "prefecture": "兵庫県",
+    "description": "日本三古湯のひとつ。金泉・銀泉の2種類の泉質が楽しめる歴史ある温泉地。",
+    "mapQuery": "有馬温泉"
   },
   {
     "id": 6,
@@ -51,7 +61,9 @@
     "springType": "酸性泉",
     "flowRate": 10000,
     "region": "北海道",
-    "prefecture": "北海道"
+    "prefecture": "北海道",
+    "description": "地獄谷を源泉とし、9種類もの泉質が楽しめる北海道を代表する温泉地。",
+    "mapQuery": "登別温泉"
   },
   {
     "id": 7,
@@ -60,7 +72,9 @@
     "springType": "塩化物泉",
     "flowRate": 14000,
     "region": "九州",
-    "prefecture": "鹿児島県"
+    "prefecture": "鹿児島県",
+    "description": "砂むし温泉が有名。南国情緒あふれる鹿児島の人気温泉地。",
+    "mapQuery": "指宿温泉"
   },
   {
     "id": 8,
@@ -69,7 +83,9 @@
     "springType": "硫黄泉",
     "flowRate": 2000,
     "region": "九州",
-    "prefecture": "熊本県"
+    "prefecture": "熊本県",
+    "description": "自然に囲まれた山あいの温泉地。露天風呂めぐりが人気。",
+    "mapQuery": "黒川温泉"
   },
   {
     "id": 9,
@@ -78,7 +94,9 @@
     "springType": "塩化物泉",
     "flowRate": 2300,
     "region": "近畿",
-    "prefecture": "兵庫県"
+    "prefecture": "兵庫県",
+    "description": "7つの外湯めぐりが名物。浴衣姿でそぞろ歩きが楽しめる温泉街。",
+    "mapQuery": "城崎温泉"
   },
   {
     "id": 10,
@@ -87,7 +105,9 @@
     "springType": "塩化物泉",
     "flowRate": 20000,
     "region": "関東",
-    "prefecture": "神奈川県"
+    "prefecture": "神奈川県",
+    "description": "都心からのアクセスも良く、豊富な宿と多彩な泉質が魅力の温泉地。",
+    "mapQuery": "箱根温泉"
   },
   {
     "id": 11,
@@ -96,7 +116,9 @@
     "springType": "塩化物泉",
     "flowRate": 200,
     "region": "九州",
-    "prefecture": "大分県"
+    "prefecture": "大分県",
+    "description": "由布岳の麓に広がる温泉地。おしゃれなカフェや美術館も点在。",
+    "mapQuery": "由布院温泉"
   },
   {
     "id": 12,
@@ -105,7 +127,9 @@
     "springType": "炭酸水素塩泉",
     "flowRate": 300,
     "region": "関東",
-    "prefecture": "群馬県"
+    "prefecture": "群馬県",
+    "description": "石段街がシンボル。黄金の湯と白銀の湯の2種類の泉質が楽しめる。",
+    "mapQuery": "伊香保温泉"
   },
   {
     "id": 13,
@@ -114,7 +138,9 @@
     "springType": "硫酸塩泉",
     "flowRate": 400,
     "region": "中部",
-    "prefecture": "石川県"
+    "prefecture": "石川県",
+    "description": "七尾湾に面した海辺の温泉地。塩分を含む湯が特徴。",
+    "mapQuery": "和倉温泉"
   },
   {
     "id": 14,
@@ -123,7 +149,9 @@
     "springType": "二酸化炭素泉",
     "flowRate": 500,
     "region": "中部",
-    "prefecture": "静岡県"
+    "prefecture": "静岡県",
+    "description": "首都圏からのアクセス抜群。海と温泉が楽しめるリゾート地。",
+    "mapQuery": "熱海温泉"
   },
   {
     "id": 15,
@@ -132,7 +160,9 @@
     "springType": "含鉄泉",
     "flowRate": 600,
     "region": "中部",
-    "prefecture": "岐阜県"
+    "prefecture": "岐阜県",
+    "description": "北アルプスの山々に囲まれた自然豊かな温泉郷。露天風呂が充実。",
+    "mapQuery": "奥飛騨温泉郷"
   },
   {
     "id": 16,
@@ -141,7 +171,9 @@
     "springType": "酸性泉",
     "flowRate": 700,
     "region": "中国",
-    "prefecture": "島根県"
+    "prefecture": "島根県",
+    "description": "美肌の湯として有名。古くから「神の湯」として親しまれる。",
+    "mapQuery": "玉造温泉"
   },
   {
     "id": 17,
@@ -150,7 +182,9 @@
     "springType": "含よう素泉",
     "flowRate": 800,
     "region": "東北",
-    "prefecture": "山形県"
+    "prefecture": "山形県",
+    "description": "大正ロマン漂う木造旅館が立ち並ぶ、情緒あふれる温泉街。",
+    "mapQuery": "銀山温泉"
   },
   {
     "id": 18,
@@ -159,7 +193,9 @@
     "springType": "硫黄泉",
     "flowRate": 900,
     "region": "中部",
-    "prefecture": "新潟県"
+    "prefecture": "新潟県",
+    "description": "エメラルドグリーンの硫黄泉が特徴。美肌効果が高いと評判。",
+    "mapQuery": "月岡温泉"
   },
   {
     "id": 19,
@@ -168,7 +204,9 @@
     "springType": "放射能泉",
     "flowRate": 1000,
     "region": "東北",
-    "prefecture": "秋田県"
+    "prefecture": "秋田県",
+    "description": "秘湯ムード満点の山あいの温泉郷。7つの個性的な湯宿が点在。",
+    "mapQuery": "乳頭温泉郷"
   },
   {
     "id": 20,
@@ -177,7 +215,9 @@
     "springType": "単純泉",
     "flowRate": 100,
     "region": "関東",
-    "prefecture": "栃木県"
+    "prefecture": "栃木県",
+    "description": "渓谷美と豊かな自然に囲まれた温泉地。観光地へのアクセスも良好。",
+    "mapQuery": "鬼怒川・川治温泉"
   },
   {
     "id": 21,
@@ -186,7 +226,9 @@
     "springType": "塩化物泉",
     "flowRate": 200,
     "region": "東北",
-    "prefecture": "山形県"
+    "prefecture": "山形県",
+    "description": "",
+    "mapQuery": "蔵王温泉"
   },
   {
     "id": 22,
@@ -195,7 +237,9 @@
     "springType": "炭酸水素塩泉",
     "flowRate": 300,
     "region": "北海道",
-    "prefecture": "北海道"
+    "prefecture": "北海道",
+    "description": "",
+    "mapQuery": "十勝川温泉"
   },
   {
     "id": 23,
@@ -204,7 +248,9 @@
     "springType": "硫酸塩泉",
     "flowRate": 400,
     "region": "中部",
-    "prefecture": "福井県"
+    "prefecture": "福井県",
+    "description": "",
+    "mapQuery": "あわら温泉"
   },
   {
     "id": 24,
@@ -213,7 +259,9 @@
     "springType": "二酸化炭素泉",
     "flowRate": 500,
     "region": "関東",
-    "prefecture": "群馬県"
+    "prefecture": "群馬県",
+    "description": "",
+    "mapQuery": "万座温泉"
   },
   {
     "id": 25,
@@ -222,7 +270,9 @@
     "springType": "含鉄泉",
     "flowRate": 600,
     "region": "中部",
-    "prefecture": "石川県"
+    "prefecture": "石川県",
+    "description": "",
+    "mapQuery": "山代温泉"
   },
   {
     "id": 26,
@@ -231,7 +281,9 @@
     "springType": "酸性泉",
     "flowRate": 700,
     "region": "九州",
-    "prefecture": "佐賀県"
+    "prefecture": "佐賀県",
+    "description": "",
+    "mapQuery": "嬉野温泉"
   },
   {
     "id": 27,
@@ -240,7 +292,9 @@
     "springType": "含よう素泉",
     "flowRate": 800,
     "region": "中部",
-    "prefecture": "長野県"
+    "prefecture": "長野県",
+    "description": "",
+    "mapQuery": "昼神温泉"
   },
   {
     "id": 28,
@@ -249,7 +303,9 @@
     "springType": "硫黄泉",
     "flowRate": 900,
     "region": "東北",
-    "prefecture": "宮城県"
+    "prefecture": "宮城県",
+    "description": "",
+    "mapQuery": "秋保温泉"
   },
   {
     "id": 29,
@@ -258,7 +314,9 @@
     "springType": "放射能泉",
     "flowRate": 1000,
     "region": "九州",
-    "prefecture": "鹿児島県"
+    "prefecture": "鹿児島県",
+    "description": "",
+    "mapQuery": "霧島温泉"
   },
   {
     "id": 30,
@@ -267,7 +325,9 @@
     "springType": "単純泉",
     "flowRate": 100,
     "region": "中国",
-    "prefecture": "鳥取県"
+    "prefecture": "鳥取県",
+    "description": "",
+    "mapQuery": "三朝温泉"
   },
   {
     "id": 31,
@@ -276,7 +336,9 @@
     "springType": "塩化物泉",
     "flowRate": 200,
     "region": "東北",
-    "prefecture": "宮城県"
+    "prefecture": "宮城県",
+    "description": "",
+    "mapQuery": "鳴子温泉"
   },
   {
     "id": 32,
@@ -285,7 +347,9 @@
     "springType": "炭酸水素塩泉",
     "flowRate": 300,
     "region": "関東",
-    "prefecture": "群馬県"
+    "prefecture": "群馬県",
+    "description": "",
+    "mapQuery": "四万温泉"
   },
   {
     "id": 33,
@@ -294,7 +358,9 @@
     "springType": "硫酸塩泉",
     "flowRate": 400,
     "region": "関東",
-    "prefecture": "群馬県"
+    "prefecture": "群馬県",
+    "description": "",
+    "mapQuery": "みなかみ18湯"
   },
   {
     "id": 34,
@@ -303,7 +369,9 @@
     "springType": "二酸化炭素泉",
     "flowRate": 500,
     "region": "中部",
-    "prefecture": "長野県"
+    "prefecture": "長野県",
+    "description": "",
+    "mapQuery": "白骨温泉"
   },
   {
     "id": 35,
@@ -312,7 +380,9 @@
     "springType": "含鉄泉",
     "flowRate": 600,
     "region": "中部",
-    "prefecture": "長野県"
+    "prefecture": "長野県",
+    "description": "",
+    "mapQuery": "湯田中渋温泉郷"
   },
   {
     "id": 36,
@@ -321,7 +391,9 @@
     "springType": "酸性泉",
     "flowRate": 700,
     "region": "北海道",
-    "prefecture": "北海道"
+    "prefecture": "北海道",
+    "description": "",
+    "mapQuery": "湯の川温泉"
   },
   {
     "id": 37,
@@ -330,7 +402,9 @@
     "springType": "含よう素泉",
     "flowRate": 800,
     "region": "北海道",
-    "prefecture": "北海道"
+    "prefecture": "北海道",
+    "description": "",
+    "mapQuery": "定山渓温泉"
   },
   {
     "id": 38,
@@ -339,7 +413,9 @@
     "springType": "硫黄泉",
     "flowRate": 900,
     "region": "近畿",
-    "prefecture": "和歌山県"
+    "prefecture": "和歌山県",
+    "description": "",
+    "mapQuery": "南紀白浜温泉"
   },
   {
     "id": 39,
@@ -348,7 +424,9 @@
     "springType": "放射能泉",
     "flowRate": 1000,
     "region": "北海道",
-    "prefecture": "北海道"
+    "prefecture": "北海道",
+    "description": "",
+    "mapQuery": "平磯温泉"
   },
   {
     "id": 40,
@@ -357,7 +435,9 @@
     "springType": "単純泉",
     "flowRate": 100,
     "region": "中部",
-    "prefecture": "石川県"
+    "prefecture": "石川県",
+    "description": "",
+    "mapQuery": "山中温泉"
   },
   {
     "id": 41,
@@ -366,7 +446,9 @@
     "springType": "塩化物泉",
     "flowRate": 200,
     "region": "中部",
-    "prefecture": "富山県"
+    "prefecture": "富山県",
+    "description": "",
+    "mapQuery": "宇奈月温泉"
   },
   {
     "id": 42,
@@ -375,7 +457,9 @@
     "springType": "炭酸水素塩泉",
     "flowRate": 300,
     "region": "九州",
-    "prefecture": "長崎県"
+    "prefecture": "長崎県",
+    "description": "",
+    "mapQuery": "雲仙温泉"
   },
   {
     "id": 43,
@@ -384,7 +468,9 @@
     "springType": "硫酸塩泉",
     "flowRate": 400,
     "region": "中部",
-    "prefecture": "長野県"
+    "prefecture": "長野県",
+    "description": "",
+    "mapQuery": "上諏訪温泉"
   },
   {
     "id": 44,
@@ -393,7 +479,9 @@
     "springType": "二酸化炭素泉",
     "flowRate": 500,
     "region": "中部",
-    "prefecture": "岐阜県"
+    "prefecture": "岐阜県",
+    "description": "",
+    "mapQuery": "飛騨高山温泉"
   },
   {
     "id": 45,
@@ -402,7 +490,9 @@
     "springType": "含鉄泉",
     "flowRate": 600,
     "region": "東北",
-    "prefecture": "青森県"
+    "prefecture": "青森県",
+    "description": "",
+    "mapQuery": "酸ヶ湯温泉"
   },
   {
     "id": 46,
@@ -411,7 +501,9 @@
     "springType": "酸性泉",
     "flowRate": 700,
     "region": "中部",
-    "prefecture": "長野県"
+    "prefecture": "長野県",
+    "description": "",
+    "mapQuery": "野沢温泉"
   },
   {
     "id": 47,
@@ -420,7 +512,9 @@
     "springType": "含よう素泉",
     "flowRate": 800,
     "region": "中部",
-    "prefecture": "静岡県"
+    "prefecture": "静岡県",
+    "description": "",
+    "mapQuery": "修善寺温泉"
   },
   {
     "id": 48,
@@ -429,7 +523,9 @@
     "springType": "硫黄泉",
     "flowRate": 900,
     "region": "中国",
-    "prefecture": "山口県"
+    "prefecture": "山口県",
+    "description": "",
+    "mapQuery": "長門湯本温泉"
   },
   {
     "id": 49,
@@ -438,7 +534,9 @@
     "springType": "放射能泉",
     "flowRate": 1000,
     "region": "東北",
-    "prefecture": "岩手県"
+    "prefecture": "岩手県",
+    "description": "",
+    "mapQuery": "花巻温泉郷"
   },
   {
     "id": 50,
@@ -447,7 +545,9 @@
     "springType": "単純泉",
     "flowRate": 100,
     "region": "中部",
-    "prefecture": "山梨県"
+    "prefecture": "山梨県",
+    "description": "",
+    "mapQuery": "石和温泉"
   },
   {
     "id": 51,
@@ -456,7 +556,9 @@
     "springType": "塩化物泉",
     "flowRate": 200,
     "region": "中部",
-    "prefecture": "岐阜県"
+    "prefecture": "岐阜県",
+    "description": "",
+    "mapQuery": "長良川温泉"
   },
   {
     "id": 52,
@@ -465,7 +567,9 @@
     "springType": "炭酸水素塩泉",
     "flowRate": 300,
     "region": "北海道",
-    "prefecture": "北海道"
+    "prefecture": "北海道",
+    "description": "",
+    "mapQuery": "阿寒湖温泉"
   },
   {
     "id": 53,
@@ -474,7 +578,9 @@
     "springType": "硫酸塩泉",
     "flowRate": 400,
     "region": "関東",
-    "prefecture": "神奈川県"
+    "prefecture": "神奈川県",
+    "description": "",
+    "mapQuery": "湯河原温泉"
   },
   {
     "id": 54,
@@ -483,7 +589,9 @@
     "springType": "二酸化炭素泉",
     "flowRate": 500,
     "region": "中部",
-    "prefecture": "静岡県"
+    "prefecture": "静岡県",
+    "description": "",
+    "mapQuery": "稲取温泉"
   },
   {
     "id": 55,
@@ -492,7 +600,9 @@
     "springType": "含鉄泉",
     "flowRate": 600,
     "region": "北海道",
-    "prefecture": "北海道"
+    "prefecture": "北海道",
+    "description": "",
+    "mapQuery": "川湯温泉"
   },
   {
     "id": 56,
@@ -501,7 +611,9 @@
     "springType": "酸性泉",
     "flowRate": 700,
     "region": "北海道",
-    "prefecture": "北海道"
+    "prefecture": "北海道",
+    "description": "",
+    "mapQuery": "層雲峡温泉"
   },
   {
     "id": 57,
@@ -510,7 +622,9 @@
     "springType": "含よう素泉",
     "flowRate": 800,
     "region": "東北",
-    "prefecture": "福島県"
+    "prefecture": "福島県",
+    "description": "",
+    "mapQuery": "母畑温泉"
   },
   {
     "id": 58,
@@ -519,7 +633,9 @@
     "springType": "硫黄泉",
     "flowRate": 900,
     "region": "北海道",
-    "prefecture": "北海道"
+    "prefecture": "北海道",
+    "description": "",
+    "mapQuery": "ウトロ温泉"
   },
   {
     "id": 59,
@@ -528,7 +644,9 @@
     "springType": "放射能泉",
     "flowRate": 1000,
     "region": "北海道",
-    "prefecture": "北海道"
+    "prefecture": "北海道",
+    "description": "",
+    "mapQuery": "洞爺湖温泉"
   },
   {
     "id": 60,
@@ -537,7 +655,9 @@
     "springType": "単純泉",
     "flowRate": 100,
     "region": "東北",
-    "prefecture": "山形県"
+    "prefecture": "山形県",
+    "description": "",
+    "mapQuery": "かみのやま温泉"
   },
   {
     "id": 61,
@@ -546,7 +666,9 @@
     "springType": "塩化物泉",
     "flowRate": 200,
     "region": "中部",
-    "prefecture": "新潟県"
+    "prefecture": "新潟県",
+    "description": "",
+    "mapQuery": "越後湯沢温泉"
   },
   {
     "id": 62,
@@ -555,7 +677,9 @@
     "springType": "炭酸水素塩泉",
     "flowRate": 300,
     "region": "中部",
-    "prefecture": "新潟県"
+    "prefecture": "新潟県",
+    "description": "",
+    "mapQuery": "松之山温泉"
   },
   {
     "id": 63,
@@ -564,7 +688,9 @@
     "springType": "硫酸塩泉",
     "flowRate": 400,
     "region": "中部",
-    "prefecture": "静岡県"
+    "prefecture": "静岡県",
+    "description": "",
+    "mapQuery": "観音温泉"
   },
   {
     "id": 64,
@@ -573,7 +699,9 @@
     "springType": "二酸化炭素泉",
     "flowRate": 500,
     "region": "九州",
-    "prefecture": "熊本県"
+    "prefecture": "熊本県",
+    "description": "",
+    "mapQuery": "人吉温泉"
   },
   {
     "id": 65,
@@ -582,7 +710,9 @@
     "springType": "含鉄泉",
     "flowRate": 600,
     "region": "九州",
-    "prefecture": "熊本県"
+    "prefecture": "熊本県",
+    "description": "",
+    "mapQuery": "山鹿・平山温泉"
   },
   {
     "id": 66,
@@ -591,7 +721,9 @@
     "springType": "酸性泉",
     "flowRate": 700,
     "region": "中部",
-    "prefecture": "静岡県"
+    "prefecture": "静岡県",
+    "description": "",
+    "mapQuery": "伊東温泉"
   },
   {
     "id": 67,
@@ -600,7 +732,9 @@
     "springType": "含よう素泉",
     "flowRate": 800,
     "region": "中国",
-    "prefecture": "鳥取県"
+    "prefecture": "鳥取県",
+    "description": "",
+    "mapQuery": "皆生温泉"
   },
   {
     "id": 68,
@@ -609,7 +743,9 @@
     "springType": "硫黄泉",
     "flowRate": 900,
     "region": "関東",
-    "prefecture": "栃木県"
+    "prefecture": "栃木県",
+    "description": "",
+    "mapQuery": "那須温泉"
   },
   {
     "id": 69,
@@ -618,7 +754,9 @@
     "springType": "放射能泉",
     "flowRate": 1000,
     "region": "東北",
-    "prefecture": "秋田県"
+    "prefecture": "秋田県",
+    "description": "",
+    "mapQuery": "玉川温泉"
   },
   {
     "id": 70,
@@ -627,7 +765,9 @@
     "springType": "単純泉",
     "flowRate": 100,
     "region": "東北",
-    "prefecture": "福島県"
+    "prefecture": "福島県",
+    "description": "",
+    "mapQuery": "高湯温泉"
   },
   {
     "id": 71,
@@ -636,7 +776,9 @@
     "springType": "塩化物泉",
     "flowRate": 200,
     "region": "四国",
-    "prefecture": "香川県"
+    "prefecture": "香川県",
+    "description": "",
+    "mapQuery": "こんぴら温泉郷"
   },
   {
     "id": 72,
@@ -645,7 +787,9 @@
     "springType": "炭酸水素塩泉",
     "flowRate": 300,
     "region": "東北",
-    "prefecture": "福島県"
+    "prefecture": "福島県",
+    "description": "",
+    "mapQuery": "東山温泉"
   },
   {
     "id": 73,
@@ -654,7 +798,9 @@
     "springType": "硫酸塩泉",
     "flowRate": 400,
     "region": "関東",
-    "prefecture": "栃木県"
+    "prefecture": "栃木県",
+    "description": "",
+    "mapQuery": "塩原温泉"
   },
   {
     "id": 74,
@@ -663,7 +809,9 @@
     "springType": "二酸化炭素泉",
     "flowRate": 500,
     "region": "関東",
-    "prefecture": "栃木県"
+    "prefecture": "栃木県",
+    "description": "",
+    "mapQuery": "湯西川温泉"
   },
   {
     "id": 75,
@@ -672,7 +820,9 @@
     "springType": "含鉄泉",
     "flowRate": 600,
     "region": "中部",
-    "prefecture": "富山県"
+    "prefecture": "富山県",
+    "description": "",
+    "mapQuery": "金太郎温泉"
   },
   {
     "id": 76,
@@ -681,7 +831,9 @@
     "springType": "酸性泉",
     "flowRate": 700,
     "region": "東北",
-    "prefecture": "青森県"
+    "prefecture": "青森県",
+    "description": "",
+    "mapQuery": "黄金崎不老ふ死温泉"
   },
   {
     "id": 77,
@@ -690,7 +842,9 @@
     "springType": "含よう素泉",
     "flowRate": 800,
     "region": "近畿",
-    "prefecture": "滋賀県"
+    "prefecture": "滋賀県",
+    "description": "",
+    "mapQuery": "おごと温泉"
   },
   {
     "id": 78,
@@ -699,7 +853,9 @@
     "springType": "硫黄泉",
     "flowRate": 900,
     "region": "近畿",
-    "prefecture": "兵庫県"
+    "prefecture": "兵庫県",
+    "description": "",
+    "mapQuery": "湯村温泉"
   },
   {
     "id": 79,
@@ -708,7 +864,9 @@
     "springType": "放射能泉",
     "flowRate": 1000,
     "region": "九州",
-    "prefecture": "熊本県"
+    "prefecture": "熊本県",
+    "description": "",
+    "mapQuery": "阿蘇温泉郷"
   },
   {
     "id": 80,
@@ -717,7 +875,9 @@
     "springType": "単純泉",
     "flowRate": 100,
     "region": "東北",
-    "prefecture": "山形県"
+    "prefecture": "山形県",
+    "description": "",
+    "mapQuery": "あつみ温泉"
   },
   {
     "id": 81,
@@ -726,7 +886,9 @@
     "springType": "塩化物泉",
     "flowRate": 200,
     "region": "東北",
-    "prefecture": "福島県"
+    "prefecture": "福島県",
+    "description": "",
+    "mapQuery": "芦ノ牧温泉"
   },
   {
     "id": 82,
@@ -735,7 +897,9 @@
     "springType": "炭酸水素塩泉",
     "flowRate": 300,
     "region": "中部",
-    "prefecture": "静岡県"
+    "prefecture": "静岡県",
+    "description": "",
+    "mapQuery": "下田温泉"
   },
   {
     "id": 83,
@@ -744,7 +908,9 @@
     "springType": "硫酸塩泉",
     "flowRate": 400,
     "region": "北海道",
-    "prefecture": "北海道"
+    "prefecture": "北海道",
+    "description": "",
+    "mapQuery": "ニセコ温泉郷"
   },
   {
     "id": 84,
@@ -753,7 +919,9 @@
     "springType": "二酸化炭素泉",
     "flowRate": 500,
     "region": "近畿",
-    "prefecture": "三重県"
+    "prefecture": "三重県",
+    "description": "",
+    "mapQuery": "鳥羽温泉郷"
   },
   {
     "id": 85,
@@ -762,7 +930,9 @@
     "springType": "含鉄泉",
     "flowRate": 600,
     "region": "関東",
-    "prefecture": "栃木県"
+    "prefecture": "栃木県",
+    "description": "",
+    "mapQuery": "日光湯元温泉"
   },
   {
     "id": 86,
@@ -771,7 +941,9 @@
     "springType": "酸性泉",
     "flowRate": 700,
     "region": "近畿",
-    "prefecture": "和歌山県"
+    "prefecture": "和歌山県",
+    "description": "",
+    "mapQuery": "南紀勝浦温泉"
   },
   {
     "id": 87,
@@ -780,7 +952,9 @@
     "springType": "含よう素泉",
     "flowRate": 800,
     "region": "近畿",
-    "prefecture": "兵庫県"
+    "prefecture": "兵庫県",
+    "description": "",
+    "mapQuery": "洲本温泉"
   },
   {
     "id": 88,
@@ -789,7 +963,9 @@
     "springType": "硫黄泉",
     "flowRate": 900,
     "region": "四国",
-    "prefecture": "徳島県"
+    "prefecture": "徳島県",
+    "description": "",
+    "mapQuery": "祖谷温泉"
   },
   {
     "id": 89,
@@ -798,7 +974,9 @@
     "springType": "放射能泉",
     "flowRate": 1000,
     "region": "東北",
-    "prefecture": "青森県"
+    "prefecture": "青森県",
+    "description": "",
+    "mapQuery": "浅虫温泉"
   },
   {
     "id": 90,
@@ -807,7 +985,9 @@
     "springType": "単純泉",
     "flowRate": 100,
     "region": "中部",
-    "prefecture": "山梨県"
+    "prefecture": "山梨県",
+    "description": "",
+    "mapQuery": "河口湖温泉"
   },
   {
     "id": 91,
@@ -816,7 +996,9 @@
     "springType": "塩化物泉",
     "flowRate": 200,
     "region": "中部",
-    "prefecture": "長野県"
+    "prefecture": "長野県",
+    "description": "",
+    "mapQuery": "扉温泉"
   },
   {
     "id": 92,
@@ -825,7 +1007,9 @@
     "springType": "炭酸水素塩泉",
     "flowRate": 300,
     "region": "中部",
-    "prefecture": "新潟県"
+    "prefecture": "新潟県",
+    "description": "",
+    "mapQuery": "瀬波温泉"
   },
   {
     "id": 93,
@@ -834,7 +1018,9 @@
     "springType": "硫酸塩泉",
     "flowRate": 400,
     "region": "近畿",
-    "prefecture": "三重県"
+    "prefecture": "三重県",
+    "description": "",
+    "mapQuery": "長島温泉"
   },
   {
     "id": 94,
@@ -843,7 +1029,9 @@
     "springType": "二酸化炭素泉",
     "flowRate": 500,
     "region": "東北",
-    "prefecture": "岩手県"
+    "prefecture": "岩手県",
+    "description": "",
+    "mapQuery": "つなぎ温泉"
   },
   {
     "id": 95,
@@ -852,7 +1040,9 @@
     "springType": "含鉄泉",
     "flowRate": 600,
     "region": "東北",
-    "prefecture": "福島県"
+    "prefecture": "福島県",
+    "description": "",
+    "mapQuery": "磐梯熱海温泉"
   },
   {
     "id": 96,
@@ -861,7 +1051,9 @@
     "springType": "酸性泉",
     "flowRate": 700,
     "region": "中部",
-    "prefecture": "長野県"
+    "prefecture": "長野県",
+    "description": "",
+    "mapQuery": "別所温泉"
   },
   {
     "id": 97,
@@ -870,7 +1062,9 @@
     "springType": "含よう素泉",
     "flowRate": 800,
     "region": "東北",
-    "prefecture": "山形県"
+    "prefecture": "山形県",
+    "description": "",
+    "mapQuery": "天童温泉"
   },
   {
     "id": 98,
@@ -879,7 +1073,9 @@
     "springType": "硫黄泉",
     "flowRate": 900,
     "region": "関東",
-    "prefecture": "千葉県"
+    "prefecture": "千葉県",
+    "description": "",
+    "mapQuery": "鴨川温泉"
   },
   {
     "id": 99,
@@ -888,7 +1084,9 @@
     "springType": "放射能泉",
     "flowRate": 1000,
     "region": "中部",
-    "prefecture": "山梨県"
+    "prefecture": "山梨県",
+    "description": "",
+    "mapQuery": "西山温泉"
   },
   {
     "id": 100,
@@ -897,7 +1095,9 @@
     "springType": "単純泉",
     "flowRate": 100,
     "region": "東北",
-    "prefecture": "宮城県"
+    "prefecture": "宮城県",
+    "description": "",
+    "mapQuery": "作並温泉"
   }
 ]
 

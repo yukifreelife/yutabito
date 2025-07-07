@@ -13,15 +13,15 @@ export function renderRecommendedSlider(data) {
   const selected = shuffled.slice(0, 5);
 
   selected.forEach(onsen => {
-    const card = document.createElement("a");
+    const card = document.createElement("div");
     card.className = "slider-card";
-    card.href = `onsen.html?id=${onsen.id}`;
 
     card.innerHTML = `
-      <img src="${generateImageUrl(onsen.romaji)}" alt="${onsen.name}">
-      <h4>${onsen.name}</h4>
+      <a href = "onsen.html?id=${onsen.id}">
+        <img src="${generateImageUrl(onsen.romaji)}" alt="${onsen.name}">
+        <h4>${onsen.name}</h4>
+      </a> 
       <button class="favorite-btn" data-id="${onsen.id}">♡</button>
-
     `;
 
     slider.appendChild(card);

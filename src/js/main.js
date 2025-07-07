@@ -8,7 +8,6 @@ fetch('/onsen.json')
   .then(data => {
     allOnsenData = data;
     renderRecommendedSlider(data); // 初期表示：ランダム
-    setupFavoriteButtons();
   })
   .catch(err => {
     console.error("温泉データの取得に失敗しました:", err);
