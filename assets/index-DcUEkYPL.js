@@ -4,4 +4,4 @@
         <h4>${e.name}</h4>
       </a> 
       <button class="favorite-btn" data-id="${e.id}">♡</button>
-    `,n.appendChild(t)}),c()}let d=[];fetch("/onsen.json").then(o=>o.json()).then(o=>{d=o,l(o)}).catch(o=>{console.error("温泉データの取得に失敗しました:",o)});const a=document.getElementById("showFavoritesBtn");a&&a.addEventListener("click",()=>{const o=JSON.parse(localStorage.getItem("favorites")||"[]"),n=new Set(o.map(String)),r=d.filter(s=>n.has(String(s.id)));l(r),c()});
+    `,n.appendChild(t)}),c()}let d=[];fetch("./onsen.json").then(o=>o.json()).then(o=>{d=o,l(o)}).catch(o=>{console.error("温泉データの取得に失敗しました:",o)});const a=document.getElementById("showFavoritesBtn");a&&a.addEventListener("click",()=>{const o=JSON.parse(localStorage.getItem("favorites")||"[]"),n=new Set(o.map(String)),r=d.filter(s=>n.has(String(s.id)));l(r),c()});
