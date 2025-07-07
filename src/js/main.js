@@ -3,7 +3,7 @@ import { setupFavoriteButtons } from './favorite.js';
 
 let allOnsenData = [];
 
-fetch('/onsen.json')
+fetch('./onsen.json')
   .then(res => res.json())
   .then(data => {
     allOnsenData = data;

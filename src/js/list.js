@@ -4,7 +4,7 @@ let onsenData = [];
 let currentIndex = 0;
 const ITEMS_PER_PAGE = 20;
 
-fetch('/onsen.json')
+fetch('./onsen.json')
   .then(res => res.json())
   .then(data => {
     onsenData = data;

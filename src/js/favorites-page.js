@@ -6,7 +6,7 @@ function generateImageUrl(romaji) {
 }
 
 async function loadOnsenData() {
-  const response = await fetch('/onsen.json');
+  const response = await fetch('./onsen.json');
   const allData = await response.json();
 
   const favorites = new Set(JSON.parse(localStorage.getItem("favorites") || "[]").map(String));

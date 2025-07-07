@@ -1,6 +1,6 @@
 import { loadOnsenDetail } from './loadOnsenDetail.js';
 
-fetch('/onsen.json')
+fetch('./onsen.json')
   .then(res => res.json())
   .then(data => {
     loadOnsenDetail(data);
