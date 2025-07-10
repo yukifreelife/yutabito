@@ -2,7 +2,7 @@
 import { setupFavoriteButtons } from './favorite.js';
 
 function generateImageUrl(romaji) {
-  return `/assets/images/onsen_${romaji}.jpg`;
+  return `${import.meta.env.BASE_URL}assets/images/onsen_${romaji}.jpg`;
 }
 
 async function loadOnsenData() {
