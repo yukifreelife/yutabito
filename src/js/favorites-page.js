@@ -26,7 +26,7 @@ async function loadOnsenData() {
     card.innerHTML = `
       <div class="card-img-wrapper">
         <img src="${generateImageUrl(onsen.romaji)}" alt="${onsen.name}" />
-        <button class="favorite-btn" data-id="${String(onsen.id)}">♥</button>
+        <button class="favorite-btn" data-id="${String(onsen.id)}">♥️</button>
       </div>
       <div class="card-content">
         <h3>${onsen.name}</h3>

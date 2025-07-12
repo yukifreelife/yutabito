@@ -16,7 +16,7 @@ function renderOnsenCards(onsenList, append = false) {
     card.className = 'onsen-card';
 
     // romajiプロパティから画像パスを生成
-    const imagePath = `/assets/images/onsen_${onsen.romaji}.jpg`;
+    const imagePath = `${import.meta.env.BASE_URL}assets/images/onsen_${onsen.romaji}.jpg`;
 
     card.innerHTML = `
       <img src="${imagePath}" alt="${onsen.name}" />

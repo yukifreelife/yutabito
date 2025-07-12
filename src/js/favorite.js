@@ -10,7 +10,7 @@ export function setupFavoriteButtons(removeCardOnUnfavorite = false) {
     // 初期状態設定
     if (favorites.has(onsenId)) {
       btn.classList.add("active");
-      btn.textContent = "♥";
+      btn.textContent = "♥️";
     } else {
       btn.classList.remove("active");
       btn.textContent = "♡";
@@ -36,7 +36,7 @@ export function setupFavoriteButtons(removeCardOnUnfavorite = false) {
       } else {
         favorites.add(onsenId);
         btn.classList.add("active");
-        btn.textContent = "♥";
+        btn.textContent = "♥️";
       }
 
       localStorage.setItem("favorites", JSON.stringify([...favorites]));
