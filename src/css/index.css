@@ -59,6 +59,33 @@
   font-size: 1rem;
 }
 
+/* 左右カラム構造（PC） */
+.index-layout {
+  display: flex;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+/* 左カラム：絞り込みボックス */
+.filter-sidebar {
+  width: 250px;
+  background-color: #f5f5f5;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 0 6px rgba(0,0,0,0.1);
+}
+
+/* 右カラム：温泉カード一覧 */
+.onsen-list {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+/* 📱 レスポンシブ対応：縦並びに切り替え */
+
+
 /* レスポンシブ */
 @media (max-width: 600px) {
   .slider-container {
@@ -80,4 +107,19 @@
   .recommended-section h2 {
     font-size: 1.2rem;
   }
+  @media (max-width: 768px) {
+  .index-layout {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .filter-sidebar {
+    width: 100%;
+  }
+
+  .onsen-list {
+    justify-content: center;
+  }
+}
+
 }
