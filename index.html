@@ -18,27 +18,56 @@
     </nav>
   </header>
 
+
+    <!-- 🔍 左：絞り込みエリア -->
+    <aside class="filter-sidebar">
+      <h2>♨️ 温泉を探す</h2>
+      <label>泉質：
+        <select id="filter-spring">
+          <option value="">すべて</option>
+          <option value="硫黄泉">硫黄泉</option>
+          <option value="炭酸水素塩泉">炭酸水素塩泉</option>
+          <!-- 必要に応じて追加 -->
+        </select>
+      </label>
+      <label>地域：
+        <select id="filter-region">
+          <option value="">すべて</option>
+          <option value="北海道">北海道</option>
+          <option value="群馬県">群馬県</option>
+          <!-- 必要に応じて追加 -->
+        </select>
+      </label>
+      <label>キーワード検索：
+        <input type="text" id="filter-keyword" placeholder="例：草津" />
+      </label>
+      <button id="apply-filters">検索</button>
+      </aside>
+
   <!-- 🔍 検索ウインドウ -->
-  <section class="search-section">
-    <input type="text" id="searchInput" placeholder="温泉名で検索..." />
-    <!-- 必要なら今後selectやcheckboxもここに追加 -->
-  </section>
+  <main class="main-layout">
+    <section class="search-section">
+      <input type="text" id="searchInput" placeholder="温泉名で検索..." />
+      <!-- 必要なら今後selectやcheckboxもここに追加 -->
+    </section>
+
 
   <!-- 🧡 おすすめ温泉カード -->
-  <section class="recommended-section">
-    <h2>おすすめ温泉</h2>
-    <div id="recommended-slider" class="slider-container"></div>
-  </section>
+    <section class="recommended-section">
+      <h2>おすすめ温泉</h2>
+      <div id="recommended-slider" class="slider-container"></div>
+    </section>
 
-  <div class="center-button">
-    <a href="favorites.html" class="btn secondary">お気に入りだけ表示</a>
-  </div>
+    <div class="center-button">
+      <a href="favorites.html" class="btn secondary">お気に入りだけ表示</a>
+    </div>
+  </main>
 
+    <footer class="site-footer">
+      <p>&copy; 2025 Yutabito</p>
+    </footer>
 
-  <footer class="site-footer">
-    <p>&copy; 2025 Yutabito</p>
-  </footer>
+    <script type="module" src="/src/js/main.js"></script>
 
-  <script type="module" src="/src/js/main.js"></script>
 </body>
 </html>
