@@ -82,12 +82,17 @@
   flex-wrap: wrap;
   gap: 1rem;
 }
+.center-button {
+  text-align: center;
+  margin: 2rem 0;
+}
+
 
 /* 📱 レスポンシブ対応：縦並びに切り替え */
 
 
 /* レスポンシブ */
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .slider-container {
     flex-direction: column;
     overflow-x: visible;
@@ -107,7 +112,6 @@
   .recommended-section h2 {
     font-size: 1.2rem;
   }
-  @media (max-width: 768px) {
   .index-layout {
     flex-direction: column;
     padding: 1rem;
@@ -120,6 +124,4 @@
   .onsen-list {
     justify-content: center;
   }
-}
-
 }

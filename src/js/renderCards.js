@@ -17,9 +17,10 @@ function renderOnsenCards(onsenList, append = false) {
 
     // romajiプロパティから画像パスを生成
     const imagePath = `${import.meta.env.BASE_URL}assets/images/onsen_${onsen.romaji}.jpg`;
+    const fallbackImage = `${import.meta.env.BASE_URL}assets/images/placeholder.jpg`;
 
     card.innerHTML = `
-      <img src="${imagePath}" alt="${onsen.name}" />
+      <img src="${imagePath}" alt="${onsen.name}" onerror="this.onerror=null;this.src='${fallbackImage}';" />
       <div class="card-content">
         <h3>${onsen.name}</h3>
         <p>${onsen.description || '癒しの温泉地です。'}</p>
