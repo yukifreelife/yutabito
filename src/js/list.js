@@ -1,4 +1,6 @@
 import { renderOnsenCards } from './renderCards.js';
+import { setupFavoriteButtons } from './favorite.js';
+
 
 let onsenData = [];
 let currentIndex = 0;
