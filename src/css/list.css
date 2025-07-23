@@ -28,18 +28,10 @@
   margin: 0;
 }
 
-.favorite-btn {
-  position: absolute;
-  top: 8px;
-  right: 8px;
-  background: none;
-  border: none;
-  font-size: 1.3rem;
-  cursor: pointer;
-}
-
-.favorite-btn.active {
-  color: red;
+.onsen-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
 }
 
 .center-button {

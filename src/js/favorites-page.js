@@ -1,5 +1,5 @@
-// js/favorites-page.js
 import { setupFavoriteButtons } from './favorite.js';
+import { generateImageWithFallback } from './utils.js';
 
 function generateImageUrl(romaji) {
   return `${import.meta.env.BASE_URL}assets/images/onsen_${romaji}.jpg`;
@@ -23,17 +23,35 @@ async function loadOnsenData() {
   filtered.forEach(onsen => {
     const card = document.createElement("div");
     card.className = "card";
-    card.innerHTML = `
-      <div class="card-img-wrapper">
-        <img src="${generateImageUrl(onsen.romaji)}" alt="${onsen.name}" />
-        <button class="favorite-btn" data-id="${String(onsen.id)}">♥️</button>
-      </div>
-      <div class="card-content">
-        <h3>${onsen.name}</h3>
-        <p>${onsen.description || "癒しの温泉でゆっくり過ごそう。"}</p>
-      </div>
-    `;
-    container.appendChild(card);
+    const imgWrapper = document.createElement("div");
+imgWrapper.className = "card-img-wrapper";
+
+const img = generateImageWithFallback(onsen.romaji, onsen.name);
+const favBtn = document.createElement("button");
+favBtn.className = "favorite-btn";
+favBtn.setAttribute("data-id", String(onsen.id));
+favBtn.textContent = "♥️";
+
+imgWrapper.appendChild(img);
+imgWrapper.appendChild(favBtn);
+
+// カード本文
+const content = document.createElement("div");
+content.className = "card-content";
+
+const title = document.createElement("h3");
+title.textContent = onsen.name;
+
+const desc = document.createElement("p");
+desc.textContent = onsen.description || "癒しの温泉でゆっくり過ごそう。";
+
+content.appendChild(title);
+content.appendChild(desc);
+
+// カード全体に追加
+card.appendChild(imgWrapper);
+card.appendChild(content);
+container.appendChild(card);
   });
 
   setupFavoriteButtons(true);

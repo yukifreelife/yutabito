@@ -1,3 +1,4 @@
+import { generateImageWithFallback } from './utils.js';
 import { setupFavoriteButtons } from './favorite.js';
 function generateImageUrl(romaji) {
   return `${import.meta.env.BASE_URL}assets/images/onsen_${romaji}.jpg`;
@@ -16,13 +17,23 @@ export function renderRecommendedSlider(data) {
     const card = document.createElement("div");
     card.className = "slider-card";
 
-    card.innerHTML = `
-      <a href = "onsen.html?id=${onsen.id}">
-        <img src="${generateImageUrl(onsen.romaji)}" alt="${onsen.name}">
-        <h4>${onsen.name}</h4>
-      </a> 
-      <button class="favorite-btn" data-id="${onsen.id}">♡</button>
-    `;
+  const link = document.createElement('a');
+  link.href = `onsen.html?id=${onsen.id}`;
+
+  const img = generateImageWithFallback(onsen.romaji, onsen.name);
+  const h4 = document.createElement('h4');
+  h4.textContent = onsen.name;
+
+  link.appendChild(img);
+  link.appendChild(h4);
+
+  const favBtn = document.createElement('button');
+  favBtn.className = 'favorite-btn';
+  favBtn.setAttribute('data-id', onsen.id);
+  favBtn.textContent = '♡';
+
+  card.appendChild(link);
+  card.appendChild(favBtn);
 
     slider.appendChild(card);
   });

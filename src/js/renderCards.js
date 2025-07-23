@@ -15,6 +15,10 @@ function renderOnsenCards(onsenList, append = false) {
     const card = document.createElement('div');
     card.className = 'onsen-card';
 
+    const link = document.createElement('a');
+    link.href = `onsen.html?id=${onsen.id}`;
+    link.className = 'onsen-link';    
+
 // ✅ 画像生成（onerrorもDOMで明示）
     const imagePath = `${import.meta.env.BASE_URL}assets/images/onsen_${onsen.romaji}.jpg`;
     const fallbackImage = `${import.meta.env.BASE_URL}assets/images/placeholder.jpg`;
@@ -37,20 +41,20 @@ function renderOnsenCards(onsenList, append = false) {
     const desc = document.createElement('p');
     desc.textContent = onsen.description || '癒しの温泉地です。';
 
+    content.appendChild(title);
+    content.appendChild(desc);
+    link.appendChild(img);
+    link.appendChild(content);
+
+
     const favBtn = document.createElement('button');
     favBtn.className = 'favorite-btn';
     favBtn.setAttribute('data-id', String(onsen.id));
     favBtn.textContent = '♡';
 
     // ✅ 要素の組み立て
-    content.appendChild(title);
-    content.appendChild(desc);
-    content.appendChild(favBtn);
-
-    card.appendChild(img);
-    card.appendChild(content);
-
-
+    card.appendChild(link);
+    card.appendChild(favBtn);
     container.appendChild(card);
   });
 
