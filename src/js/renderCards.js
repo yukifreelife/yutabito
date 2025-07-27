@@ -15,11 +15,14 @@ function renderOnsenCards(onsenList, append = false) {
     const card = document.createElement('div');
     card.className = 'onsen-card';
 
+    const imageWrapper = document.createElement('div');
+    imageWrapper.className = 'image-wrapper';
+
     const link = document.createElement('a');
     link.href = `onsen.html?id=${onsen.id}`;
     link.className = 'onsen-link';    
 
-// ✅ 画像生成（onerrorもDOMで明示）
+    // ✅ 画像生成（onerrorもDOMで明示）
     const imagePath = `${import.meta.env.BASE_URL}assets/images/onsen_${onsen.romaji}.jpg`;
     const fallbackImage = `${import.meta.env.BASE_URL}assets/images/placeholder.jpg`;
 
@@ -31,7 +34,17 @@ function renderOnsenCards(onsenList, append = false) {
       this.src = fallbackImage;
     };
 
-    // ✅ カード内容（テキストとボタン）
+    link.appendChild(img);
+
+    const favBtn = document.createElement('button');
+    favBtn.className = 'favorite-btn';
+    favBtn.setAttribute('data-id', String(onsen.id));
+    favBtn.textContent = '♡';
+
+    imageWrapper.appendChild(link);
+    imageWrapper.appendChild(favBtn);
+
+    // ✅ カード内容（温泉名と説明）
     const content = document.createElement('div');
     content.className = 'card-content';
 
@@ -43,22 +56,18 @@ function renderOnsenCards(onsenList, append = false) {
 
     content.appendChild(title);
     content.appendChild(desc);
-    link.appendChild(img);
-    link.appendChild(content);
-
-
-    const favBtn = document.createElement('button');
-    favBtn.className = 'favorite-btn';
-    favBtn.setAttribute('data-id', String(onsen.id));
-    favBtn.textContent = '♡';
 
     // ✅ 要素の組み立て
-    card.appendChild(link);
-    card.appendChild(favBtn);
+    card.appendChild(imageWrapper); // 🔁 画像＋ボタンラッパー
+    card.appendChild(content);      // 🔁 テキスト
     container.appendChild(card);
   });
 
-  setupFavoriteButtons();
+requestAnimationFrame(() => {
+  setTimeout(() => {
+    setupFavoriteButtons();
+  }, 50);
+});
 }
 
 // お気に入りボタンの設定

@@ -131,10 +131,11 @@
   font-size: 1.5rem;
   cursor: pointer;
   color: #ccc;
-  z-index: 2;
+  z-index: 9999;
   transition: color 0.3s ease, transform 0.2s ease;
   line-height: 1;
   padding: 0;
+  pointer-events: auto;
 }
 
 .favorite-btn:hover {
@@ -147,3 +148,6 @@
   color: red;
 }
 
+.image-wrapper {
+  position: relative;
+}

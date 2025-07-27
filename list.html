@@ -31,5 +31,13 @@
   </footer>
 
   <script type="module" src="/src/js/list.js"></script>
+  <script type="module">
+  import { renderOnsenCards } from '/src/js/renderCards.js';
+  import { onsenData } from '/src/js/utils.js';
+  import { setupFavoriteButtons } from '/src/js/favorite.js';
+
+  renderOnsenCards(onsenData);
+  setupFavoriteButtons(); // ← モジュールとして直接使う
+</script>
 </body>
 </html>

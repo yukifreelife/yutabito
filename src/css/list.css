@@ -30,8 +30,13 @@
 
 .onsen-link {
   display: block;
+    position: relative; 
   text-decoration: none;
   color: inherit;
+  z-index: 1;
+  height: auto; 
+  max-height: 160px;
+  overflow: hidden;  
 }
 
 .center-button {

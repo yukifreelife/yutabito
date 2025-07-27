@@ -19,6 +19,7 @@ export function setupFavoriteButtons(removeCardOnUnfavorite = false) {
     btn.addEventListener("click", (e) => {
       e.preventDefault();
       e.stopPropagation();
+      
 
       // イベントごとに再取得（ここも重要）
       favorites = new Set(JSON.parse(localStorage.getItem("favorites") || "[]").map(String));

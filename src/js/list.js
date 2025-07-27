@@ -19,7 +19,9 @@ fetch('./onsen.json')
 function loadNextBatch() {
   const nextItems = onsenData.slice(currentIndex, currentIndex + ITEMS_PER_PAGE);
   renderOnsenCards(nextItems, true);
-  setupFavoriteButtons();
+  setTimeout(() => {
+    setupFavoriteButtons();
+  }, 0);
   currentIndex += ITEMS_PER_PAGE;
 
   if (currentIndex >= onsenData.length) {
@@ -27,4 +29,9 @@ function loadNextBatch() {
   }
 }
 
-document.getElementById("loadMoreBtn").addEventListener("click", loadNextBatch);
+document.addEventListener("DOMContentLoaded", () => {
+  const loadBtn = document.getElementById("loadMoreBtn");
+  if (loadBtn) {
+    loadBtn.addEventListener("click", loadNextBatch);
+  }
+});
