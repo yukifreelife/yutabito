@@ -1,6 +1,6 @@
 import { loadOnsenDetail } from './loadOnsenDetail.js';
 
-fetch('./onsen.json')
+fetch(`${import.meta.env.BASE_URL}onsen.json`)
   .then(res => res.json())
   .then(data => {
     loadOnsenDetail(data);

@@ -6,7 +6,7 @@ let onsenData = [];
 let currentIndex = 0;
 const ITEMS_PER_PAGE = 20;
 
-fetch('./onsen.json')
+fetch(`${import.meta.env.BASE_URL}onsen.json`)
   .then(res => res.json())
   .then(data => {
     onsenData = data;
@@ -19,19 +19,14 @@ fetch('./onsen.json')
 function loadNextBatch() {
   const nextItems = onsenData.slice(currentIndex, currentIndex + ITEMS_PER_PAGE);
   renderOnsenCards(nextItems, true);
-  setTimeout(() => {
-    setupFavoriteButtons();
-  }, 0);
-  currentIndex += ITEMS_PER_PAGE;
 
+  requestAnimationFrame(setupFavoriteButtons);
+
+  currentIndex += ITEMS_PER_PAGE;
   if (currentIndex >= onsenData.length) {
     document.getElementById("loadMoreBtn").style.display = "none";
   }
 }
 
-document.addEventListener("DOMContentLoaded", () => {
-  const loadBtn = document.getElementById("loadMoreBtn");
-  if (loadBtn) {
-    loadBtn.addEventListener("click", loadNextBatch);
-  }
-});
+document.getElementById('loadMoreBtn')
+        .addEventListener('click', loadNextBatch);

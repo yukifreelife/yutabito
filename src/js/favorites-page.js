@@ -1,12 +1,9 @@
 import { setupFavoriteButtons } from './favorite.js';
 import { generateImageWithFallback } from './utils.js';
 
-function generateImageUrl(romaji) {
-  return `${import.meta.env.BASE_URL}assets/images/onsen_${romaji}.jpg`;
-}
 
 async function loadOnsenData() {
-  const response = await fetch('./onsen.json');
+  const response = await fetch(`${import.meta.env.BASE_URL}onsen.json`);
   const allData = await response.json();
 
   const favorites = new Set(JSON.parse(localStorage.getItem("favorites") || "[]").map(String));

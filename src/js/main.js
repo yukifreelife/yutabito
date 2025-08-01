@@ -3,7 +3,7 @@ import { setupFavoriteButtons } from './favorite.js';
 
 let allOnsenData = [];
 
-fetch('./onsen.json')
+fetch(`${import.meta.env.BASE_URL}onsen.json`)
   .then(res => res.json())
   .then(data => {
     allOnsenData = data;

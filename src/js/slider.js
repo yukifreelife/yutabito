@@ -1,8 +1,5 @@
 import { generateImageWithFallback } from './utils.js';
 import { setupFavoriteButtons } from './favorite.js';
-function generateImageUrl(romaji) {
-  return `${import.meta.env.BASE_URL}assets/images/onsen_${romaji}.jpg`;
-}
 
 // おすすめ温泉スライダーを描画
 export function renderRecommendedSlider(data) {
