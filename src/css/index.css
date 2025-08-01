@@ -68,6 +68,7 @@
 
 /* 左カラム：絞り込みボックス */
 .filter-sidebar {
+  height : 100%;
   width: 250px;
   background-color: #f5f5f5;
   padding: 1rem;
