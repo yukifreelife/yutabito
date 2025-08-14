@@ -43,3 +43,12 @@ button:hover {
   background-color: var(--color-accent);
   color: white;
 }
+/* 出典表記（フッター用・控えめ） */
+.source-note--footer{
+  display:block;
+  margin-top: .25rem;
+  font-size: .78rem;
+  color: var(--color-text-muted, #8a8a8a);
+  opacity: .8;
+  text-align: right;
+}

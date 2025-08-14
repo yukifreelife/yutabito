@@ -1,4 +1,5 @@
 import { setupFavoriteButtons } from './favorite.js';
+import { generateImageWithFallback } from './utils.js';
 export function loadOnsenDetail(data) {
   // URLパラメータから ?id=〇〇 を取得
   const params = new URLSearchParams(window.location.search);
@@ -28,7 +29,7 @@ export function loadOnsenDetail(data) {
   // 表示処理
   container.innerHTML = `
     <h2>${onsen.name}</h2>
-    <img src="${onsen.imageUrl}" alt="${onsen.name}" />
+    ${generateImageWithFallback(onsen.romaji, onsen.name).outerHTML}
     <div class="description-box">
       <p>${onsen.description}</p>
     </div>
@@ -44,7 +45,7 @@ export function loadOnsenDetail(data) {
     </div>
 
     <h3>地図で場所を確認</h3>
-    ${mapEmbed}
+    ${googleMapEmbed}
   `;
 
   setupFavoriteButtons();

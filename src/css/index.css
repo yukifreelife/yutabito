@@ -2,11 +2,16 @@
 .search-section {
   margin: 2rem auto 1rem;
   text-align: center;
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  gap:.75rem;
 }
 
 #searchInput {
   width: 90%;
   max-width: 400px;
+  width:min(560px, 90%);
   padding: 0.6rem 1rem;
   font-size: 1rem;
   border: 1px solid #ccc;
@@ -26,6 +31,8 @@
   padding-bottom: 1rem;
   scroll-snap-type: x mandatory;
   justify-content: center;
+  padding-inline: 40rem;
+  scroll-padding-inline: 1rem; 
 }
 
 .slider-card {
@@ -58,22 +65,60 @@
   margin: 0.5rem 0;
   font-size: 1rem;
 }
-
-/* 左右カラム構造（PC） */
-.index-layout {
-  display: flex;
-  gap: 2rem;
-  padding: 2rem;
+.center-block{
+  width:auto;                 /* 余計に広げない */
+  display:block;              /* flex を外す */
+  margin: 2rem auto;          /* auto で左右中央寄せ */
+  text-align:center;          /* 内側を横並びにした時センタリングしやすい */
 }
 
+
+/* コンテンツ側が広がり、aside が固定幅のイメージ */
+.content-area{
+  margin-left: var(--sidebar-width,260px);
+  padding:2rem 2rem; 
+}
+
+:root{
+  --sidebar-width: 260px;   /* aside の横幅 */
+  --header-h:      120px;   /* ヘッダーの高さ（実寸に合わせる）*/
+}
 /* 左カラム：絞り込みボックス */
-.filter-sidebar {
-  height : 100%;
-  width: 250px;
-  background-color: #f5f5f5;
-  padding: 1rem;
-  border-radius: 8px;
-  box-shadow: 0 0 6px rgba(0,0,0,0.1);
+.filter-sidebar{
+  position: fixed;
+  top: var(--header-h);          /* ヘッダー直下に貼り付け */
+  left: 0;
+  width: var(--sidebar-width,260px);
+  height: calc(100vh - var(--header-h));
+  overflow-y: auto;              /* 中身が長くなってもスクロール可 */
+  background:#f5f5f5;
+  padding:1rem;
+  border-radius:0;               /* 角丸を取るなら */
+  box-shadow: 2px 0 6px rgba(0,0,0,.08);
+  z-index: 5;                    /* メニューより背面にならないように */
+  display: flex;             /* ← 縦に並べる */
+  flex-direction: column;
+  gap: .8rem;
+}
+
+/* ラベルをブロック化＝1行占有に */
+.filter-sidebar label{
+  display: block;
+}
+
+/* 入力部品はラベルの下に折り返して全幅 */
+.filter-sidebar label > input,
+.filter-sidebar label > select{
+  display: block;
+  width: 100%;
+  margin-top: .25rem;        /* 見出しと入力の間に少し余白 */
+}
+
+/* ボタンも1行占有に（好みで全幅） */
+#apply-filters{
+  display: block;
+  width: 100%;
+  margin-top: .5rem;
 }
 
 /* 右カラム：温泉カード一覧 */
@@ -98,6 +143,8 @@
     flex-direction: column;
     overflow-x: visible;
     gap: 1rem;
+    padding-inline: 0;            /* ← 追加 */
+    scroll-padding-inline: 0;
   }
 
   .slider-card {
@@ -119,10 +166,23 @@
   }
 
   .filter-sidebar {
+    position: static;            /* flow に戻す */
     width: 100%;
+    height: auto;
+    box-shadow:none;
+  }
+
+  .content-area{
+    margin-left: 0;
   }
 
   .onsen-list {
     justify-content: center;
+  }
+    .layout-wrapper{
+    flex-direction:column;
+  }
+  .filter-sidebar{      /* 見た目調整 (任意) */
+    width:100%;
   }
 }
