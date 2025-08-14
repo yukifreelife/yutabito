@@ -1,0 +1,1 @@
+function o(t,s=""){const a=`/yutabito/assets/images/onsen_${t}.jpg`,n="/yutabito/assets/images/placeholder.jpg",e=document.createElement("img");return e.src=a,e.alt=s,e.onerror=function(){this.onerror=null,this.src=n},e}export{o as g};

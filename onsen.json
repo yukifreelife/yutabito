@@ -8,7 +8,9 @@
     "region": "関東",
     "prefecture": "群馬県",
     "description": "日本三名泉のひとつで、強い酸性泉が特徴。湯畑や足湯、食べ歩きも楽しめる温泉街。",
-    "mapQuery": "草津温泉"
+    "mapQuery": "草津温泉",
+    "tempC": 47,
+    "scenicTags": ["渓谷", "雪見"]
   },
   {
     "id": 2,

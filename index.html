@@ -3,42 +3,126 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Yutabito 温泉検索</title>
-  <script type="module" crossorigin src="/yutabito/assets/main-ke4vDtqn.js"></script>
-  <link rel="modulepreload" crossorigin href="/yutabito/assets/favorite-DccFiVyW.js">
-  <link rel="stylesheet" crossorigin href="/yutabito/assets/favorite-CT_fmQjz.css">
-  <link rel="stylesheet" crossorigin href="/yutabito/assets/main-BHcfpO4S.css">
+  <title>湯旅人〜Yutabito〜 温泉検索</title>
+  <script type="module" crossorigin src="/yutabito/assets/main-DggYDQxJ.js"></script>
+  <link rel="modulepreload" crossorigin href="/yutabito/assets/favorite-D5ASEm3T.js">
+  <link rel="modulepreload" crossorigin href="/yutabito/assets/utils-i6mLqElC.js">
+  <link rel="modulepreload" crossorigin href="/yutabito/assets/filter-CoeZjwpE.js">
+  <link rel="stylesheet" crossorigin href="/yutabito/assets/favorite-BVFnvuCa.css">
+  <link rel="stylesheet" crossorigin href="/yutabito/assets/main-DJOQeovZ.css">
 </head>
+
+<script>
+(function(){
+  const FORM_ID  = '1FAIpQLSe7n4XyNp2rAAtCyHqUYc9GekuU5RdNovifApbySfIUQgwDyw';
+  const ENTRY_URL = 'entry.242021905';  // 「閲覧中のページURL」の entry ID
+  const BASE = `https://docs.google.com/forms/d/e/${FORM_ID}/viewform?usp=pp_url`;
+
+  function attachContactLink(){
+    const a = document.getElementById('contactLink');
+    if (!a) return;
+    const u = new URL(BASE);
+    u.searchParams.set(ENTRY_URL, location.href); // 現在のページURLを事前入力
+    a.href = u.toString();
+  }
+
+  // DOM 準備後に実行（先に読み込まれても確実に動く）
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', attachContactLink);
+  } else {
+    attachContactLink();
+  }
+})();
+</script>
+
+
+
 <body>
   <header class="site-header">
-    <h1>Yutabito</h1>
-    <p>癒しの温泉を検索しよう</p>
+    <h1>湯旅人〜Yutabito〜</h1>
+    <p>癒やしの温泉をみつけよう</p>
     <nav class="main-nav">
-      <a href="index.html" class="active">ホーム・温泉更新</a>
+      <a href="index.html" class="active">ホーム</a>
       <a href="list.html">温泉一覧</a>
+      <a href="favorites.html">お気に入り</a>
+<!-- 例：ヘッダーのナビ内 -->
+      <a id="contactLink"
+        href="https://docs.google.com/forms/d/e/1FAIpQLSe7n4XyNp2rAAtCyHqUYc9GekuU5RdNovifApbySfIUQgwDyw/viewform?usp=pp_url"
+        target="_blank" rel="noopener noreferrer">お問い合わせ</a>
     </nav>
   </header>
 
-  <!-- 🔍 検索ウインドウ -->
-  <section class="search-section">
-    <input type="text" id="searchInput" placeholder="温泉名で検索..." />
-    <!-- 必要なら今後selectやcheckboxもここに追加 -->
-  </section>
 
-  <!-- 🧡 おすすめ温泉カード -->
-  <section class="recommended-section">
-    <h2>おすすめ温泉</h2>
-    <div id="recommended-slider" class="slider-container"></div>
-  </section>
+    <!-- 🔍 左：絞り込みエリア -->
+  <div class="layout-wrapper">
+    <aside class="filter-sidebar">
+      <h2>♨️ 今日の温泉を探す</h2>
+      <label>キーワード検索：
+        <input type="text" id="filter-keyword" placeholder="例：草津" />
+      </label>
+        <button id="apply-filters">検索</button>
+      <!-- <label>泉質：
+        <select id="filter-spring">
+          <option value="">すべて</option>
+          <option value="硫黄泉">硫黄泉</option>
+          <option value="炭酸水素塩泉">炭酸水素塩泉</option> -->
+          <!-- 必要に応じて追加 -->
+        </select>
+      </label>
+      <label>地域：
+        <select id="filter-region">
+          <option value="">すべて</option>
+          <option value="北海道">北海道</option>
+          <option value="群馬県">群馬県</option>
+          <!-- 必要に応じて追加 -->
+        </select>
+      </label>
+      <!-- <label>景観： -->
+        <!-- <select id="filter-scenic">
+          <option value="">すべて</option>
+          <option value="海">海</option>
+          <option value="渓谷">渓谷</option>
+          <option value="山">山</option>
+          <option value="雪見">雪見</option>
+          <option value="星空">星空</option>
+        </select>
+      </label> -->
+    </aside>
 
-  <div class="center-button">
-    <a href="favorites.html" class="btn secondary">お気に入りだけ表示</a>
+
+    <!-- 🔍 検索ウインドウ -->
+    <main class="content-area">
+      <div class="center-block">
+        <section class="search-section">
+          <input type="text" id="searchInput" placeholder="温泉名で検索..." />
+          <button class="btn" id="searchByNameBtn">検索</button>
+          <!-- 必要なら今後selectやcheckboxもここに追加 -->
+        </section>
+      </div>
+
+      <!-- 🧡 おすすめ温泉カード -->
+      <div class="center-block">
+        <section class="recommended-section">
+          <h2>今日の温泉</h2>
+          <div id="recommended-slider" class="slider-container"></div>
+        </section>
+      </div>
+      <div class="center-block">
+        <div class="center-button">
+          <a href="list.html" class="btn secondary">他の温泉も見る</a>
+        </div>
+      </div>  
+    </main>
   </div>
 
+<footer class="site-footer">
+  <p>&copy; 2025 Yutabito</p>
+  <small class="source-note--footer">
+    ※出典：観光経済新聞社「にっぽんの温泉100選」を参考に独自編集しています。
+  </small>
+</footer>
 
-  <footer class="site-footer">
-    <p>&copy; 2025 Yutabito</p>
-  </footer>
+
 
 </body>
 </html>
