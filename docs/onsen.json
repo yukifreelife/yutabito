@@ -225,110 +225,110 @@
     "id": 21,
     "name": "蔵王温泉",
     "romaji": "zao",
-    "springType": "塩化物泉",
+    "springType": "硫黄泉",
     "flowRate": 200,
     "region": "東北",
     "prefecture": "山形県",
-    "description": "",
+    "description": "蔵王連峰の麓に位置する温泉地。強酸性の硫黄泉と冬のスキーリゾートが有名。",
     "mapQuery": "蔵王温泉"
   },
   {
     "id": 22,
     "name": "十勝川温泉",
     "romaji": "tokachigawa",
-    "springType": "炭酸水素塩泉",
+    "springType": "モール泉",
     "flowRate": 300,
     "region": "北海道",
     "prefecture": "北海道",
-    "description": "",
+    "description": "植物性有機物を含むモール泉が特徴。美肌効果が高いとされる。",
     "mapQuery": "十勝川温泉"
   },
   {
     "id": 23,
     "name": "あわら温泉",
     "romaji": "awara",
-    "springType": "硫酸塩泉",
+    "springType": "塩化物泉",
     "flowRate": 400,
     "region": "中部",
     "prefecture": "福井県",
-    "description": "",
+    "description": "北陸を代表する温泉地。宿泊施設が充実し、観光拠点としても人気。",
     "mapQuery": "あわら温泉"
   },
   {
     "id": 24,
     "name": "万座温泉",
     "romaji": "manza",
-    "springType": "二酸化炭素泉",
+    "springType": "硫黄泉",
     "flowRate": 500,
     "region": "関東",
     "prefecture": "群馬県",
-    "description": "",
+    "description": "標高1800mに位置する高原の温泉地。硫黄の香り漂う乳白色の湯が特徴。",
     "mapQuery": "万座温泉"
   },
   {
     "id": 25,
     "name": "山代温泉",
     "romaji": "yamashiro",
-    "springType": "含鉄泉",
+    "springType": "硫酸塩泉",
     "flowRate": 600,
     "region": "中部",
     "prefecture": "石川県",
-    "description": "",
+    "description": "加賀温泉郷の一つ。歴史ある温泉街と伝統工芸が楽しめる。",
     "mapQuery": "山代温泉"
   },
   {
     "id": 26,
     "name": "嬉野温泉",
     "romaji": "ureshino",
-    "springType": "酸性泉",
+    "springType": "炭酸水素塩泉",
     "flowRate": 700,
     "region": "九州",
     "prefecture": "佐賀県",
-    "description": "",
+    "description": "日本三大美肌の湯の一つ。温泉湯豆腐が名物。",
     "mapQuery": "嬉野温泉"
   },
   {
     "id": 27,
     "name": "昼神温泉",
     "romaji": "hirugami",
-    "springType": "含よう素泉",
+    "springType": "アルカリ性単純泉",
     "flowRate": 800,
     "region": "中部",
     "prefecture": "長野県",
-    "description": "",
+    "description": "星空が美しい温泉地として知られる。静かな山間のリゾート。",
     "mapQuery": "昼神温泉"
   },
   {
     "id": 28,
     "name": "秋保温泉",
     "romaji": "akiu",
-    "springType": "硫黄泉",
+    "springType": "塩化物泉",
     "flowRate": 900,
     "region": "東北",
     "prefecture": "宮城県",
-    "description": "",
+    "description": "仙台の奥座敷と呼ばれる温泉地。名取川沿いの自然が魅力。",
     "mapQuery": "秋保温泉"
   },
   {
     "id": 29,
     "name": "霧島温泉",
     "romaji": "kirishima",
-    "springType": "放射能泉",
+    "springType": "硫黄泉",
     "flowRate": 1000,
     "region": "九州",
     "prefecture": "鹿児島県",
-    "description": "",
+    "description": "霧島連山の麓に広がる温泉郷。多彩な泉質と自然景観が楽しめる。",
     "mapQuery": "霧島温泉"
   },
   {
     "id": 30,
     "name": "三朝温泉",
     "romaji": "misasa",
-    "springType": "単純泉",
+    "springType": "ラジウム泉",
     "flowRate": 100,
     "region": "中国",
     "prefecture": "鳥取県",
-    "description": "",
+    "description": "世界有数のラジウム泉を誇る温泉地。健康増進の湯治場として有名。",
     "mapQuery": "三朝温泉"
   },
   {
@@ -339,7 +339,7 @@
     "flowRate": 200,
     "region": "東北",
     "prefecture": "宮城県",
-    "description": "",
+    "description": "日本有数の多様な泉質を持つ温泉地。鳴子こけしの発祥地としても有名。",
     "mapQuery": "鳴子温泉"
   },
   {
@@ -350,7 +350,7 @@
     "flowRate": 300,
     "region": "関東",
     "prefecture": "群馬県",
-    "description": "",
+    "description": "四万川沿いに広がる温泉地。飲む温泉としても知られる。",
     "mapQuery": "四万温泉"
   },
   {
@@ -361,51 +361,51 @@
     "flowRate": 400,
     "region": "関東",
     "prefecture": "群馬県",
-    "description": "",
+    "description": "谷川岳の麓に点在する18の温泉地の総称。アウトドアも楽しめる。",
     "mapQuery": "みなかみ18湯"
   },
   {
     "id": 34,
     "name": "白骨温泉",
     "romaji": "shiraho",
-    "springType": "二酸化炭素泉",
+    "springType": "炭酸水素塩泉",
     "flowRate": 500,
     "region": "中部",
     "prefecture": "長野県",
-    "description": "",
+    "description": "乳白色の湯が特徴。秘湯ムード漂う静かな温泉地。",
     "mapQuery": "白骨温泉"
   },
   {
     "id": 35,
     "name": "湯田中渋温泉郷",
     "romaji": "yudanaka-shibu",
-    "springType": "含鉄泉",
+    "springType": "塩化物泉",
     "flowRate": 600,
     "region": "中部",
     "prefecture": "長野県",
-    "description": "",
+    "description": "歴史ある温泉街と野生の猿が温泉に入る地獄谷野猿公苑で有名。",
     "mapQuery": "湯田中渋温泉郷"
   },
   {
     "id": 36,
     "name": "湯の川温泉",
     "romaji": "yunokawa",
-    "springType": "酸性泉",
+    "springType": "塩化物泉",
     "flowRate": 700,
     "region": "北海道",
     "prefecture": "北海道",
-    "description": "",
+    "description": "函館市内に位置する温泉地。海沿いの景色と足湯が楽しめる。",
     "mapQuery": "湯の川温泉"
   },
   {
     "id": 37,
     "name": "定山渓温泉",
     "romaji": "jozankei",
-    "springType": "含よう素泉",
+    "springType": "硫酸塩泉",
     "flowRate": 800,
     "region": "北海道",
     "prefecture": "北海道",
-    "description": "",
+    "description": "札幌市内からアクセス良好な温泉地。紅葉の名所としても知られる。",
     "mapQuery": "定山渓温泉"
   },
   {
@@ -416,29 +416,29 @@
     "flowRate": 900,
     "region": "近畿",
     "prefecture": "和歌山県",
-    "description": "",
+    "description": "白い砂浜と温泉が楽しめるリゾート地。パンダで有名なアドベンチャーワールドも近い。",
     "mapQuery": "南紀白浜温泉"
   },
   {
     "id": 39,
     "name": "平磯温泉",
     "romaji": "hiraiso",
-    "springType": "放射能泉",
+    "springType": "塩化物泉",
     "flowRate": 1000,
-    "region": "北海道",
-    "prefecture": "北海道",
-    "description": "",
+    "region": "関東",
+    "prefecture": "茨城県",
+    "description": "太平洋を望む海沿いの温泉地。新鮮な海の幸が楽しめる。",
     "mapQuery": "平磯温泉"
   },
   {
     "id": 40,
     "name": "山中温泉",
     "romaji": "yamanaka",
-    "springType": "単純泉",
+    "springType": "硫酸塩泉",
     "flowRate": 100,
     "region": "中部",
     "prefecture": "石川県",
-    "description": "",
+    "description": "加賀温泉郷の一つ。鶴仙渓の散策路や伝統工芸が魅力。",
     "mapQuery": "山中温泉"
   },
   {
@@ -449,7 +449,7 @@
     "flowRate": 200,
     "region": "中部",
     "prefecture": "富山県",
-    "description": "",
+    "description": "黒部峡谷の玄関口に位置する温泉地。トロッコ列車と美しい渓谷が楽しめる。",
     "mapQuery": "宇奈月温泉"
   },
   {
@@ -460,7 +460,7 @@
     "flowRate": 300,
     "region": "九州",
     "prefecture": "長崎県",
-    "description": "",
+    "description": "雲仙岳の麓に広がる温泉地。硫黄の香り漂う湯と地獄めぐりが有名。",
     "mapQuery": "雲仙温泉"
   },
   {
@@ -471,7 +471,7 @@
     "flowRate": 400,
     "region": "中部",
     "prefecture": "長野県",
-    "description": "",
+    "description": "諏訪湖畔に広がる温泉地。湖を眺めながらの足湯や花火大会が人気。",
     "mapQuery": "上諏訪温泉"
   },
   {
@@ -482,7 +482,7 @@
     "flowRate": 500,
     "region": "中部",
     "prefecture": "岐阜県",
-    "description": "",
+    "description": "古い町並みが残る高山市内に点在する温泉地。観光と温泉が楽しめる。",
     "mapQuery": "飛騨高山温泉"
   },
   {
@@ -493,7 +493,7 @@
     "flowRate": 600,
     "region": "東北",
     "prefecture": "青森県",
-    "description": "",
+    "description": "八甲田山中にある秘湯。千人風呂と呼ばれる大浴場が有名。",
     "mapQuery": "酸ヶ湯温泉"
   },
   {
@@ -504,7 +504,7 @@
     "flowRate": 700,
     "region": "中部",
     "prefecture": "長野県",
-    "description": "",
+    "description": "外湯めぐりが楽しめる温泉地。スキーリゾートとしても人気。",
     "mapQuery": "野沢温泉"
   },
   {
@@ -515,7 +515,7 @@
     "flowRate": 800,
     "region": "中部",
     "prefecture": "静岡県",
-    "description": "",
+    "description": "伊豆最古の温泉地。竹林の小径や修善寺など風情ある観光地が点在。",
     "mapQuery": "修善寺温泉"
   },
   {
@@ -526,7 +526,7 @@
     "flowRate": 900,
     "region": "中国",
     "prefecture": "山口県",
-    "description": "",
+    "description": "音信川沿いに広がる温泉地。静かな環境でリラックスできる。",
     "mapQuery": "長門湯本温泉"
   },
   {
@@ -537,7 +537,7 @@
     "flowRate": 1000,
     "region": "東北",
     "prefecture": "岩手県",
-    "description": "",
+    "description": "宮沢賢治ゆかりの地として知られる温泉郷。自然豊かな環境が魅力。",
     "mapQuery": "花巻温泉郷"
   },
   {
@@ -548,7 +548,7 @@
     "flowRate": 100,
     "region": "中部",
     "prefecture": "山梨県",
-    "description": "",
+    "description": "甲府盆地に位置する温泉地。フルーツ狩りやワインも楽しめる。",
     "mapQuery": "石和温泉"
   },
   {
@@ -559,7 +559,7 @@
     "flowRate": 200,
     "region": "中部",
     "prefecture": "岐阜県",
-    "description": "",
+    "description": "長良川沿いに広がる温泉地。鵜飼い観光とともに楽しめる。",
     "mapQuery": "長良川温泉"
   },
   {
@@ -570,7 +570,7 @@
     "flowRate": 300,
     "region": "北海道",
     "prefecture": "北海道",
-    "description": "",
+    "description": "阿寒湖畔に位置する温泉地。アイヌ文化と自然が調和した観光地。",
     "mapQuery": "阿寒湖温泉"
   },
   {
@@ -581,7 +581,7 @@
     "flowRate": 400,
     "region": "関東",
     "prefecture": "神奈川県",
-    "description": "",
+    "description": "万葉集にも詠まれた歴史ある温泉地。自然豊かな環境が魅力。",
     "mapQuery": "湯河原温泉"
   },
   {
@@ -592,7 +592,7 @@
     "flowRate": 500,
     "region": "中部",
     "prefecture": "静岡県",
-    "description": "",
+    "description": "伊豆半島東部に位置する温泉地。金目鯛料理が名物。",
     "mapQuery": "稲取温泉"
   },
   {
@@ -603,7 +603,7 @@
     "flowRate": 600,
     "region": "北海道",
     "prefecture": "北海道",
-    "description": "",
+    "description": "屈斜路湖近くに位置する温泉地。砂を掘ると湯が湧き出るユニークな体験が可能。",
     "mapQuery": "川湯温泉"
   },
   {
@@ -614,7 +614,7 @@
     "flowRate": 700,
     "region": "北海道",
     "prefecture": "北海道",
-    "description": "",
+    "description": "大雪山国立公園内に位置する温泉地。四季折々の自然美が楽しめる。",
     "mapQuery": "層雲峡温泉"
   },
   {
@@ -625,7 +625,7 @@
     "flowRate": 800,
     "region": "東北",
     "prefecture": "福島県",
-    "description": "",
+    "description": "阿武隈山地の自然に囲まれた温泉地。静かな環境で癒しの時間を提供。",
     "mapQuery": "母畑温泉"
   },
   {
@@ -636,7 +636,7 @@
     "flowRate": 900,
     "region": "北海道",
     "prefecture": "北海道",
-    "description": "",
+    "description": "知床半島の玄関口に位置する温泉地。世界自然遺産の景観が楽しめる。",
     "mapQuery": "ウトロ温泉"
   },
   {
@@ -647,7 +647,7 @@
     "flowRate": 1000,
     "region": "北海道",
     "prefecture": "北海道",
-    "description": "",
+    "description": "洞爺湖畔に広がる温泉地。湖と有珠山の絶景が楽しめる。",
     "mapQuery": "洞爺湖温泉"
   },
   {
@@ -658,7 +658,7 @@
     "flowRate": 100,
     "region": "東北",
     "prefecture": "山形県",
-    "description": "",
+    "description": "上山城を中心に広がる温泉地。歴史と自然が調和した観光地。",
     "mapQuery": "かみのやま温泉"
   },
   {
@@ -669,7 +669,7 @@
     "flowRate": 200,
     "region": "中部",
     "prefecture": "新潟県",
-    "description": "",
+    "description": "スキーリゾートとしても有名な温泉地。雪見風呂が楽しめる。",
     "mapQuery": "越後湯沢温泉"
   },
   {
@@ -680,7 +680,7 @@
     "flowRate": 300,
     "region": "中部",
     "prefecture": "新潟県",
-    "description": "",
+    "description": "日本三大薬湯の一つ。美肌効果が高いとされる。",
     "mapQuery": "松之山温泉"
   },
   {
@@ -691,7 +691,7 @@
     "flowRate": 400,
     "region": "中部",
     "prefecture": "静岡県",
-    "description": "",
+    "description": "伊豆半島に位置する温泉地。飲泉も可能な健康志向の湯。",
     "mapQuery": "観音温泉"
   },
   {
@@ -702,7 +702,7 @@
     "flowRate": 500,
     "region": "九州",
     "prefecture": "熊本県",
-    "description": "",
+    "description": "球磨川沿いに広がる温泉地。川下りとともに楽しめる。",
     "mapQuery": "人吉温泉"
   },
   {
@@ -713,7 +713,7 @@
     "flowRate": 600,
     "region": "九州",
     "prefecture": "熊本県",
-    "description": "",
+    "description": "美肌の湯として知られる温泉地。静かな環境でリラックスできる。",
     "mapQuery": "山鹿・平山温泉"
   },
   {
@@ -724,7 +724,7 @@
     "flowRate": 700,
     "region": "中部",
     "prefecture": "静岡県",
-    "description": "",
+    "description": "伊豆を代表する温泉地。温泉街と海の景色が楽しめる。",
     "mapQuery": "伊東温泉"
   },
   {
@@ -735,7 +735,7 @@
     "flowRate": 800,
     "region": "中国",
     "prefecture": "鳥取県",
-    "description": "",
+    "description": "日本海に面した温泉地。海水浴と温泉が楽しめる。",
     "mapQuery": "皆生温泉"
   },
   {
@@ -746,7 +746,7 @@
     "flowRate": 900,
     "region": "関東",
     "prefecture": "栃木県",
-    "description": "",
+    "description": "那須高原に広がる温泉地。自然と温泉が調和したリゾート。",
     "mapQuery": "那須温泉"
   },
   {
@@ -757,7 +757,7 @@
     "flowRate": 1000,
     "region": "東北",
     "prefecture": "秋田県",
-    "description": "",
+    "description": "日本一の強酸性泉を誇る温泉地。湯治場としても有名。",
     "mapQuery": "玉川温泉"
   },
   {
@@ -768,7 +768,7 @@
     "flowRate": 100,
     "region": "東北",
     "prefecture": "福島県",
-    "description": "",
+    "description": "吾妻連峰の麓に位置する温泉地。乳白色の湯が特徴。",
     "mapQuery": "高湯温泉"
   },
   {
@@ -779,7 +779,7 @@
     "flowRate": 200,
     "region": "四国",
     "prefecture": "香川県",
-    "description": "",
+    "description": "金刀比羅宮の参拝客に人気の温泉地。歴史と文化が楽しめる。",
     "mapQuery": "こんぴら温泉郷"
   },
   {
@@ -790,7 +790,7 @@
     "flowRate": 300,
     "region": "東北",
     "prefecture": "福島県",
-    "description": "",
+    "description": "会津若松市に位置する温泉地。歴史ある宿が点在。",
     "mapQuery": "東山温泉"
   },
   {
@@ -801,7 +801,7 @@
     "flowRate": 400,
     "region": "関東",
     "prefecture": "栃木県",
-    "description": "",
+    "description": "渓谷美が楽しめる温泉地。多彩な泉質が魅力。",
     "mapQuery": "塩原温泉"
   },
   {
@@ -812,7 +812,7 @@
     "flowRate": 500,
     "region": "関東",
     "prefecture": "栃木県",
-    "description": "",
+    "description": "平家の落人伝説が残る温泉地。囲炉裏料理が名物。",
     "mapQuery": "湯西川温泉"
   },
   {
@@ -823,7 +823,7 @@
     "flowRate": 600,
     "region": "中部",
     "prefecture": "富山県",
-    "description": "",
+    "description": "立山連峰を望む温泉地。鉄分を含む赤褐色の湯が特徴。",
     "mapQuery": "金太郎温泉"
   },
   {
@@ -834,7 +834,7 @@
     "flowRate": 700,
     "region": "東北",
     "prefecture": "青森県",
-    "description": "",
+    "description": "日本海を望む露天風呂が有名。夕日の絶景が楽しめる。",
     "mapQuery": "黄金崎不老ふ死温泉"
   },
   {
@@ -845,7 +845,7 @@
     "flowRate": 800,
     "region": "近畿",
     "prefecture": "滋賀県",
-    "description": "",
+    "description": "琵琶湖畔に位置する温泉地。湖の景色と温泉が楽しめる。",
     "mapQuery": "おごと温泉"
   },
   {
@@ -856,7 +856,7 @@
     "flowRate": 900,
     "region": "近畿",
     "prefecture": "兵庫県",
-    "description": "",
+    "description": "但馬地方に位置する温泉地。湯けむり漂う情緒ある街並み。",
     "mapQuery": "湯村温泉"
   },
   {
@@ -867,7 +867,7 @@
     "flowRate": 1000,
     "region": "九州",
     "prefecture": "熊本県",
-    "description": "",
+    "description": "阿蘇山の麓に広がる温泉郷。自然と温泉が調和した癒しの地。",
     "mapQuery": "阿蘇温泉郷"
   },
   {
@@ -878,7 +878,7 @@
     "flowRate": 100,
     "region": "東北",
     "prefecture": "山形県",
-    "description": "",
+    "description": "庄内地方に位置する温泉地。川沿いの宿と温泉街が魅力。",
     "mapQuery": "あつみ温泉"
   },
   {
@@ -889,7 +889,7 @@
     "flowRate": 200,
     "region": "東北",
     "prefecture": "福島県",
-    "description": "",
+    "description": "大川渓谷沿いに広がる温泉地。自然豊かな環境で癒しの時間を提供。",
     "mapQuery": "芦ノ牧温泉"
   },
   {
@@ -900,7 +900,7 @@
     "flowRate": 300,
     "region": "中部",
     "prefecture": "静岡県",
-    "description": "",
+    "description": "伊豆半島南部に位置する温泉地。海と温泉が楽しめるリゾート。",
     "mapQuery": "下田温泉"
   },
   {
@@ -911,7 +911,7 @@
     "flowRate": 400,
     "region": "北海道",
     "prefecture": "北海道",
-    "description": "",
+    "description": "ニセコ連峰の麓に広がる温泉郷。スキーリゾートとしても人気。",
     "mapQuery": "ニセコ温泉郷"
   },
   {
@@ -922,7 +922,7 @@
     "flowRate": 500,
     "region": "近畿",
     "prefecture": "三重県",
-    "description": "",
+    "description": "伊勢志摩国立公園内に位置する温泉郷。海の幸が楽しめる。",
     "mapQuery": "鳥羽温泉郷"
   },
   {
@@ -933,7 +933,7 @@
     "flowRate": 600,
     "region": "関東",
     "prefecture": "栃木県",
-    "description": "",
+    "description": "奥日光に位置する温泉地。硫黄の香り漂う乳白色の湯が特徴。",
     "mapQuery": "日光湯元温泉"
   },
   {
@@ -944,7 +944,7 @@
     "flowRate": 700,
     "region": "近畿",
     "prefecture": "和歌山県",
-    "description": "",
+    "description": "熊野灘に面した温泉地。海を望む露天風呂が人気。",
     "mapQuery": "南紀勝浦温泉"
   },
   {
@@ -955,7 +955,7 @@
     "flowRate": 800,
     "region": "近畿",
     "prefecture": "兵庫県",
-    "description": "",
+    "description": "淡路島に位置する温泉地。海と温泉が楽しめるリゾート。",
     "mapQuery": "洲本温泉"
   },
   {
@@ -966,7 +966,7 @@
     "flowRate": 900,
     "region": "四国",
     "prefecture": "徳島県",
-    "description": "",
+    "description": "日本三大秘境の一つ。ケーブルカーで行く露天風呂が有名。",
     "mapQuery": "祖谷温泉"
   },
   {
@@ -977,7 +977,7 @@
     "flowRate": 1000,
     "region": "東北",
     "prefecture": "青森県",
-    "description": "",
+    "description": "青森市内に位置する温泉地。陸奥湾を望む景色が魅力。",
     "mapQuery": "浅虫温泉"
   },
   {
@@ -988,7 +988,7 @@
     "flowRate": 100,
     "region": "中部",
     "prefecture": "山梨県",
-    "description": "",
+    "description": "富士山を望む温泉地。湖畔のリゾートとしても人気。",
     "mapQuery": "河口湖温泉"
   },
   {
@@ -999,7 +999,7 @@
     "flowRate": 200,
     "region": "中部",
     "prefecture": "長野県",
-    "description": "",
+    "description": "松本市郊外に位置する秘湯。静かな環境で癒しの時間を提供。",
     "mapQuery": "扉温泉"
   },
   {
@@ -1010,7 +1010,7 @@
     "flowRate": 300,
     "region": "中部",
     "prefecture": "新潟県",
-    "description": "",
+    "description": "日本海に沈む夕日が楽しめる温泉地。美肌効果が高いと評判。",
     "mapQuery": "瀬波温泉"
   },
   {
@@ -1021,7 +1021,7 @@
     "flowRate": 400,
     "region": "近畿",
     "prefecture": "三重県",
-    "description": "",
+    "description": "遊園地やアウトレットモールが隣接する温泉地。",
     "mapQuery": "長島温泉"
   },
   {
@@ -1032,7 +1032,7 @@
     "flowRate": 500,
     "region": "東北",
     "prefecture": "岩手県",
-    "description": "",
+    "description": "御所湖畔に広がる温泉地。自然豊かな環境が魅力。",
     "mapQuery": "つなぎ温泉"
   },
   {
@@ -1043,7 +1043,7 @@
     "flowRate": 600,
     "region": "東北",
     "prefecture": "福島県",
-    "description": "",
+    "description": "磐梯山の麓に位置する温泉地。歴史ある宿が点在。",
     "mapQuery": "磐梯熱海温泉"
   },
   {
@@ -1054,7 +1054,7 @@
     "flowRate": 700,
     "region": "中部",
     "prefecture": "長野県",
-    "description": "",
+    "description": "信州最古の温泉地。歴史ある寺院や街並みが魅力。",
     "mapQuery": "別所温泉"
   },
   {
@@ -1065,7 +1065,7 @@
     "flowRate": 800,
     "region": "東北",
     "prefecture": "山形県",
-    "description": "",
+    "description": "将棋の駒の生産地として有名。温泉街での散策が楽しめる。",
     "mapQuery": "天童温泉"
   },
   {
@@ -1076,7 +1076,7 @@
     "flowRate": 900,
     "region": "関東",
     "prefecture": "千葉県",
-    "description": "",
+    "description": "太平洋を望む温泉地。海の幸と温泉が楽しめる。",
     "mapQuery": "鴨川温泉"
   },
   {
@@ -1087,7 +1087,7 @@
     "flowRate": 1000,
     "region": "中部",
     "prefecture": "山梨県",
-    "description": "",
+    "description": "南アルプスの山々に囲まれた秘湯。静かな環境でリラックスできる。",
     "mapQuery": "西山温泉"
   },
   {
@@ -1098,10 +1098,7 @@
     "flowRate": 100,
     "region": "東北",
     "prefecture": "宮城県",
-    "description": "",
+    "description": "仙台市郊外に位置する温泉地。渓谷美と自然が楽しめる。",
     "mapQuery": "作並温泉"
   }
 ]
-
-
-
