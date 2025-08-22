@@ -44,12 +44,11 @@ button:hover {
   color: white;
 }
 .layout-wrapper{
-  display:flex;
-  gap:2rem;
-  align-items:flex-start;
-  max-width:1200px;
-  margin: 0 auto;
-  padding: 0 16px;
+  display: flex;
+  max-width: none;
+  margin: 0;            /* 中央寄せを解除 */
+  padding-left: 0;      /* 左端にぴったり */
+  padding-right: 16px;  /* 右だけ呼吸 */
 }
 .content-area{ 
   flex:1; 
