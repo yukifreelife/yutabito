@@ -17,7 +17,23 @@
   border: 1px solid #ccc;
   border-radius: 8px;
 }
+/* スライダーの左右に等間隔の余白を付けて、余計なはみ出しを止める */
+.recommended-section .slider-container{
+  max-width: 100%;
+  overflow-x: auto;
+  padding-inline: 16px;         /* ← 左右の“限界線”を作る */
+  scroll-padding-inline: 16px;  /* ← スナップ位置も揃える */
+  justify-content: flex-start;  /* ← center は余白計算でズレやすい */
+}
 
+/* gap を使うのでカードの外側マージンはゼロに（はみ出し原因になりがち） */
+.recommended-section .slider-card{
+  flex: 0 0 180px;
+  overflow: hidden;             /* ← ホバー拡大でのはみ出しも抑止 */
+}
+
+/* 念のため：中央寄せ用ブロックが 100vw などになっていたら 100% に */
+.center-block{ width: 100%; }
 /* おすすめ温泉セクション */
 .recommended-section {
   padding: 2rem;

@@ -40,7 +40,7 @@
     "romaji": "beppu",
     "springType": "二酸化炭素泉",
     "flowRate": 95728,
-    "region": "九州",
+    "region": "九州・沖縄",
     "prefecture": "大分県",
     "description": "源泉数・湧出量ともに日本一。多彩な泉質と地獄めぐりが有名。",
     "mapQuery": "別府八湯"
@@ -73,7 +73,7 @@
     "romaji": "ibusuki",
     "springType": "塩化物泉",
     "flowRate": 14000,
-    "region": "九州",
+    "region": "九州・沖縄",
     "prefecture": "鹿児島県",
     "description": "砂むし温泉が有名。南国情緒あふれる鹿児島の人気温泉地。",
     "mapQuery": "指宿温泉"
@@ -84,7 +84,7 @@
     "romaji": "kurokawa",
     "springType": "硫黄泉",
     "flowRate": 2000,
-    "region": "九州",
+    "region": "九州・沖縄",
     "prefecture": "熊本県",
     "description": "自然に囲まれた山あいの温泉地。露天風呂めぐりが人気。",
     "mapQuery": "黒川温泉"
@@ -117,7 +117,7 @@
     "romaji": "yufuin",
     "springType": "塩化物泉",
     "flowRate": 200,
-    "region": "九州",
+    "region": "九州・沖縄",
     "prefecture": "大分県",
     "description": "由布岳の麓に広がる温泉地。おしゃれなカフェや美術館も点在。",
     "mapQuery": "由布院温泉"
@@ -282,7 +282,7 @@
     "romaji": "ureshino",
     "springType": "炭酸水素塩泉",
     "flowRate": 700,
-    "region": "九州",
+    "region": "九州・沖縄",
     "prefecture": "佐賀県",
     "description": "日本三大美肌の湯の一つ。温泉湯豆腐が名物。",
     "mapQuery": "嬉野温泉"
@@ -315,7 +315,7 @@
     "romaji": "kirishima",
     "springType": "硫黄泉",
     "flowRate": 1000,
-    "region": "九州",
+    "region": "九州・沖縄",
     "prefecture": "鹿児島県",
     "description": "霧島連山の麓に広がる温泉郷。多彩な泉質と自然景観が楽しめる。",
     "mapQuery": "霧島温泉"
@@ -458,7 +458,7 @@
     "romaji": "unzen",
     "springType": "炭酸水素塩泉",
     "flowRate": 300,
-    "region": "九州",
+    "region": "九州・沖縄",
     "prefecture": "長崎県",
     "description": "雲仙岳の麓に広がる温泉地。硫黄の香り漂う湯と地獄めぐりが有名。",
     "mapQuery": "雲仙温泉"
@@ -700,7 +700,7 @@
     "romaji": "hitoyoshi",
     "springType": "二酸化炭素泉",
     "flowRate": 500,
-    "region": "九州",
+    "region": "九州・沖縄",
     "prefecture": "熊本県",
     "description": "球磨川沿いに広がる温泉地。川下りとともに楽しめる。",
     "mapQuery": "人吉温泉"
@@ -711,7 +711,7 @@
     "romaji": "yamaga-hirayama",
     "springType": "含鉄泉",
     "flowRate": 600,
-    "region": "九州",
+    "region": "九州・沖縄",
     "prefecture": "熊本県",
     "description": "美肌の湯として知られる温泉地。静かな環境でリラックスできる。",
     "mapQuery": "山鹿・平山温泉"
@@ -865,7 +865,7 @@
     "romaji": "aso",
     "springType": "放射能泉",
     "flowRate": 1000,
-    "region": "九州",
+    "region": "九州・沖縄",
     "prefecture": "熊本県",
     "description": "阿蘇山の麓に広がる温泉郷。自然と温泉が調和した癒しの地。",
     "mapQuery": "阿蘇温泉郷"

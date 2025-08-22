@@ -9,9 +9,11 @@ export function getCriteria(){
   return {
     spring : v('filter-spring'),                       // 泉質
     region : v('filter-region'),                       // 地域
+    prefecture: v('filter-prefecture'),                // 都道府県
     keyword: v('filter-keyword').trim().toLowerCase(), // キーワード
     temp   : v('filter-temp'),                         // 湯温帯（UIが無くても ''）
     scenic : v('filter-scenic')                        // 景観
+
   };
 }
 
@@ -21,7 +23,6 @@ export function applyFilters(list, criteria = getCriteria()){
   return list.filter(o=>{
     if (c.spring  && o.springType !== c.spring)    return false;
     if (c.region  && o.region     !== c.region)    return false;
-
     if (c.keyword){
       const hay = `${o.name}${o.description}`.toLowerCase();
       if (!hay.includes(c.keyword)) return false;
