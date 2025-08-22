@@ -1,6 +1,9 @@
+import { injectFilterSidebar, wireFilterEnterToApply } from './filterSidebar.js';
 import { setupFavoriteButtons } from './favorite.js';
 import { generateImageWithFallback } from './utils.js';
 
+injectFilterSidebar('#filter-root');
+wireFilterEnterToApply();
 
 async function loadOnsenData() {
   const response = await fetch(`${import.meta.env.BASE_URL}onsen.json`);

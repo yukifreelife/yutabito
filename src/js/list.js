@@ -1,6 +1,11 @@
+import { injectFilterSidebar, wireFilterEnterToApply } from './filterSidebar.js';
 import { renderOnsenCards } from './renderCards.js';
 import { setupFavoriteButtons } from './favorite.js';
 import { applyFilters, getCriteria } from './filter.js';
+
+
+injectFilterSidebar('#filter-root');
+wireFilterEnterToApply();
 
 // ?q=（中央検索からのキーワード）を取得
 const initialQ =
