@@ -1,4 +1,5 @@
 import { loadOnsenDetail } from './loadOnsenDetail.js';
+document.addEventListener('DOMContentLoaded', loadOnsenDetail);
 
 fetch(`${import.meta.env.BASE_URL}onsen.json`)
   .then(res => res.json())

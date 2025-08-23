@@ -18,7 +18,7 @@
   border-radius: 8px;
 }
 /* スライダーの左右に等間隔の余白を付けて、余計なはみ出しを止める */
-.recommended-section .slider-container{
+.recommended-section{
   max-width: 100%;
   overflow-x: auto;
   padding-inline: 16px;         /* ← 左右の“限界線”を作る */

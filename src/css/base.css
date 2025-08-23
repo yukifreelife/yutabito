@@ -16,6 +16,11 @@ body {
   background-attachment: fixed;
   background-size: cover;
 }
+/* 全ページで横スクロール無効化のセーフティ */
+html, body { overflow-x: hidden; }
+
+/* ついでにボックス計算を安定させる（はみ出しの芽を摘む） */
+*, *::before, *::after { box-sizing: border-box; }
 
 /* 共通リンクスタイル */
 a {

@@ -27,12 +27,18 @@ async function loadOnsenData() {
 imgWrapper.className = "card-img-wrapper";
 
 const img = generateImageWithFallback(onsen.romaji, onsen.name);
+// 🔗 画像にリンクを付与
+const link = document.createElement('a');
+link.href = `onsen.html?id=${onsen.id}`;
+link.className = 'onsen-link';
+link.appendChild(img);
 const favBtn = document.createElement("button");
 favBtn.className = "favorite-btn";
 favBtn.setAttribute("data-id", String(onsen.id));
 favBtn.textContent = "♥️";
 
-imgWrapper.appendChild(img);
+// 画像リンクと♥を重ねる（♥はimgWrapper内に残す）
+imgWrapper.appendChild(link);
 imgWrapper.appendChild(favBtn);
 
 // カード本文
@@ -40,7 +46,12 @@ const content = document.createElement("div");
 content.className = "card-content";
 
 const title = document.createElement("h3");
-title.textContent = onsen.name;
+// 🔗 タイトルにもリンク
+const titleLink = document.createElement('a');
+titleLink.href = link.href;
+titleLink.className = 'onsen-link';
+titleLink.textContent = onsen.name;
+title.appendChild(titleLink);
 
 const desc = document.createElement("p");
 desc.textContent = onsen.description || "癒しの温泉でゆっくり過ごそう。";
