@@ -1,3 +1,5 @@
+import { initHamburger } from './nav.js';
+initHamburger();
 import { loadOnsenDetail } from './loadOnsenDetail.js';
 document.addEventListener('DOMContentLoaded', loadOnsenDetail);
 

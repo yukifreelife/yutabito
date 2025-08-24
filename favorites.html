@@ -21,24 +21,43 @@
 
 <body>
   <header class="site-header">
-    <h1>湯旅人〜Yutabito〜</h1>
-    <p>癒やしの温泉をみつけよう</p>
-    <nav class="main-nav">
-      <a href="index.html" class="active">ホーム</a>
+    <h1 class="brand"><a href="index.html">湯旅人〜Yutabito〜</a></h1>
+    <p class="tagline">癒やしの温泉をみつけよう</p>
+
+    <!-- ハンバーガー -->
+      <button class="nav-toggle" id="navToggle"
+          aria-controls="site-menu" aria-expanded="false"
+          aria-label="メニューを開閉">
+      <span class="nav-toggle__bar"></span>
+      <span class="nav-toggle__bar"></span>
+      <span class="nav-toggle__bar"></span>
+    </button>
+
+    <!-- 共通ナビ（data-nav が肝） -->
+    <nav class="main-nav" id="site-menu" data-nav>
+      <a href="index.html">ホーム</a>
       <a href="list.html">温泉一覧</a>
       <a href="favorites.html">お気に入り</a>
-<!-- 例：ヘッダーのナビ内 -->
       <a id="contactLink"
         href="https://docs.google.com/forms/d/e/1FAIpQLSe7n4XyNp2rAAtCyHqUYc9GekuU5RdNovifApbySfIUQgwDyw/viewform?usp=pp_url"
         target="_blank" rel="noopener noreferrer">お問い合わせ</a>
     </nav>
   </header>
 
+
   <div class="layout-wrapper">
-  <div id="filter-root"></div>   <!-- ← これを追加 -->
-  <main id="favorites-list" class="card-container">
-    <!-- お気に入り温泉カードがここに表示されます -->
-  </main>
+    <div id="filter-root"></div>   <!-- ← これを追加 -->
+    <main id="favorites-list" class="card-container">
+      <!-- お気に入り温泉カードがここに表示されます -->
+    </main>
+  </div>
+
+  <footer class="site-footer">
+  <p>&copy; 2025 Yutabito</p>
+  <small class="source-note--footer">
+    ※出典：観光経済新聞社「にっぽんの温泉100選」を参考に独自編集しています。
+  </small>
+</footer>
 
   <script type="module" src="/src/js/favorites-page.js"></script>
 </body>

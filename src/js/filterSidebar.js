@@ -1,4 +1,5 @@
-// /src/js/filterSidebar.js
+import { setupMobileNav } from './nav.js';
+setupMobileNav();// /src/js/filterSidebar.js
 // 1か所の定義から各ページにフィルターUIを差し込む
 
 export function injectFilterSidebar(targetSelector = '#filter-root') {

@@ -1,3 +1,5 @@
+import { setupMobileNav } from './nav.js';
+setupMobileNav();
 import { generateImageWithFallback } from './utils.js';
 import { setupFavoriteButtons } from './favorite.js';
 

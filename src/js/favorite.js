@@ -1,3 +1,5 @@
+import { setupMobileNav } from './nav.js';
+setupMobileNav();
 export function setupFavoriteButtons(removeCardOnUnfavorite = false) {
   const buttons = document.querySelectorAll(".favorite-btn");
   buttons.forEach(btn => {

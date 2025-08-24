@@ -1,3 +1,5 @@
+import { setupMobileNav } from './nav.js';
+setupMobileNav();
 import { injectFilterSidebar, wireFilterEnterToApply } from './filterSidebar.js';
 import { renderRecommendedSlider } from './slider.js';
 import { setupFavoriteButtons } from './favorite.js';

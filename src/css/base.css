@@ -16,6 +16,7 @@ body {
   background-attachment: fixed;
   background-size: cover;
 }
+
 /* 全ページで横スクロール無効化のセーフティ */
 html, body { overflow-x: hidden; }
 
@@ -65,8 +66,9 @@ button:hover {
   padding: 1rem;
   border-radius: 8px;
   box-shadow: 0 0 6px rgba(0,0,0,0.1);
-  position: sticky;
-  top: calc(var(--header-h, 80px) + 12px);
+  position: static;
+  top: auto;
+  height: auto;
 }
 
 /* 1行1要素＆余白 */
@@ -78,12 +80,32 @@ button:hover {
 }
 #apply-filters{ display:block; width:100%; margin-top:.5rem; }
 
-/* 出典表記（フッター用・控えめ） */
-.source-note--footer{
-  display:block;
-  margin-top: .25rem;
-  font-size: .78rem;
-  color: var(--color-text-muted, #8a8a8a);
-  opacity: .8;
-  text-align: right;
+/* トグルボタン */
+.nav-toggle{
+  display:none;
+  position:absolute;
+  top: 1rem; right: 1rem;
+  width: 40px; height: 40px;
+  border: 0; background: transparent; cursor: pointer; z-index: 60;
+}
+.nav-toggle__bar{ display:block; width:26px; height:2px; margin:6px auto; background:#2b2b2b; }
+
+/* PC: 普通に横並び */
+.main-nav{ display:flex; gap:1rem; }
+
+/* モバイル切替 */
+@media (max-width: 768px){
+  .nav-toggle{ display:block; }
+  .main-nav{ display:none; }
+  .main-nav.is-open{
+    display:block;
+    position:absolute;
+    top: calc(var(--header-h, 64px));
+    left:0; right:0;
+    background:#fff;
+    padding:1rem;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+    z-index: 1000;
+  }
+  body.no-scroll{ overflow:hidden; }
 }

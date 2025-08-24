@@ -1,3 +1,5 @@
+import { setupMobileNav } from './nav.js';
+setupMobileNav();
 // src/js/loadOnsenDetail.js
 import { setupFavoriteButtons } from './favorite.js';
 

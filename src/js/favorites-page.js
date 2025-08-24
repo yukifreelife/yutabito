@@ -1,3 +1,5 @@
+import { initHamburger } from './nav.js';
+initHamburger();
 import { injectFilterSidebar, wireFilterEnterToApply } from './filterSidebar.js';
 import { setupFavoriteButtons } from './favorite.js';
 import { generateImageWithFallback } from './utils.js';

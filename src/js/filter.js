@@ -1,3 +1,5 @@
+import { setupMobileNav } from './nav.js';
+setupMobileNav();
 // filter.js
 // DOM 取得ヘルパー
 const $ = id => document.getElementById(id);
