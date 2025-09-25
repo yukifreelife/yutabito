@@ -1,34 +1,53 @@
 // src/js/nav.js
 export function setupMobileNav() {
-  const toggle = document.getElementById('navToggle');
-  const nav    = document.getElementById('site-menu');
-  if (!toggle || !nav) return;
+  const header = document.querySelector('.site-header');
+  if (!header) return;
 
-  const root = document.documentElement;
+  const btn  = header.querySelector('.nav-toggle');
+  const menu = header.querySelector('.main-nav');
+  if (!btn || !menu) return;
 
   const open = () => {
-    nav.classList.add('is-open');
-    root.classList.add('nav-open');              // スクロール固定用
-    toggle.setAttribute('aria-expanded', 'true');
+    menu.classList.add('is-open');
+    btn.setAttribute('aria-expanded', 'true');
+    document.body.style.overflow = 'hidden'; // 背景スクロール抑止（任意）
   };
 
   const close = () => {
-    nav.classList.remove('is-open');
-    root.classList.remove('nav-open');
-    toggle.setAttribute('aria-expanded', 'false');
+    menu.classList.remove('is-open');
+    btn.setAttribute('aria-expanded', 'false');
+    document.body.style.overflow = ''; // 解除
   };
 
-  toggle.addEventListener('click', () => {
-    nav.classList.contains('is-open') ? close() : open();
+  btn.addEventListener('click', () => {
+    if (menu.classList.contains('is-open')) close();
+    else open();
   });
 
-  // ナビ内のリンクを押したら閉じる
-  nav.addEventListener('click', (e) => {
-    if (e.target.closest('a')) close();
+  // メニュー中のリンクを押したら閉じる
+  menu.addEventListener('click', (e) => {
+    const a = e.target.closest('a');
+    if (a) close();
   });
 
-  // 画面を広げたら閉じ状態に戻す（レイアウト崩れ防止）
+  // 外側クリックで閉じる
+  document.addEventListener('click', (e) => {
+    if (!menu.classList.contains('is-open')) return;
+    const clickedInside = e.target.closest('.main-nav') || e.target.closest('.nav-toggle');
+    if (!clickedInside) close();
+  });
+
+  // ESCで閉じる
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') close();
+  });
+
+  // 画面を広げたら強制リセット
   window.addEventListener('resize', () => {
-    if (window.innerWidth >= 1024) close();
+    if (window.innerWidth >= 820) close();
   });
 }
+
+// 互換目的：過去の import 名でも動くように
+export { setupMobileNav as initHamburger };
+export { setupMobileNav as setupMobileNavMenu };

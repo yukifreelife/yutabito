@@ -1,5 +1,3 @@
-import { setupMobileNav } from './nav.js';
-setupMobileNav();
 import { setupFavoriteButtons } from './favorite.js';
 
 
