@@ -1,5 +1,5 @@
 :root {
-  --color-text: #2c3e50;
+  --color-text: hsl(210, 29%, 24%);
   --color-accent: #4aa3df;
   --color-accent-hover: #2d91c2;
   --color-button-bg: rgba(255, 255, 255, 0.85);
